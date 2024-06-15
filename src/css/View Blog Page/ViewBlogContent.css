@@ -1,0 +1,31 @@
+.viewblogcontentmaincontainer{
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.viewblogcontentheader{
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.viewblogcontentdescription{
+    color: #8B9EA7;
+    font-size: 1.1rem;
+}
+
+.viewblogparentcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 6vh;
+}
+
+@media only screen and (max-width : 480px){
+    .viewblogcontentmaincontainer{
+        margin: 0 auto;
+        width: 90vw;
+        gap: 2vh;
+    }
+}

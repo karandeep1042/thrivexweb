@@ -1,0 +1,130 @@
+.sapbtpcards1maincontainer {
+    padding: 0 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.sapbtpcardsheader {
+    font-size: 2rem;
+    color: #0eaae3;
+}
+
+.sapbtpcardsdescription {
+    color: #797979;
+    font-size: 1.3rem;
+}
+
+.sapbtpcard {
+    box-shadow: 0 4px 8px 0 rgba(218, 218, 218, 0.2), 0 6px 20px 0 rgba(200, 200, 200, 0.19);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sapbtpheadersection {
+    width: 100%;
+    color: white;
+    border-top-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    justify-content: center;
+    background-color: #0eaae3;
+}
+
+.sapbtpheadersectionin {
+    width: 70%;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.sapdescription {
+    margin-left: 2vw;
+}
+
+.sapdescription ul li::marker {
+    color: #0eaae3;
+}
+
+.sapdescription ul {
+    padding: 2vh 0vw;
+    display: flex;
+
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.sapbtpcards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sapbtpcards2description ul {
+    font-size: 1.1rem;
+    margin-left: 1.5vw;
+}
+
+.sapbtpcards2description ul li::marker {
+    color: #0eaae3;
+}
+
+.sapbtpappointmentrequestcard {
+    width: 85vw;
+    display: flex;
+    height: 25vh;
+    margin: 0 auto;
+    margin-bottom: 4vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(125, 125, 125, 0.2), 0 6px 20px 0 rgba(161, 161, 161, 0.19);
+}
+
+.sapbtpappointmentrequestcardsec1 {
+    width: 25%;
+    height: 100%;
+}
+
+.sapbtpappointmentrequestcardsec1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.sapbtpappointmentrequestcardsec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+    padding: 3vh 2vw;
+}
+
+.sapbtpappointmentrequestcardheader {
+    /* padding: 1vh 2vw; */
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #0eaae3;
+}
+
+.sapbtpappointmentrequestcardbtn {
+    color: #0eaae3;
+    /* padding: 1vh 2vw; */
+    /* margin-top: 4vh; */
+    gap: 1vw;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.sapbtpappointmentrequestcardbtn:hover i {
+    transform: translateX(.5vw);
+}
+
+.sapbtpappointmentrequestcardinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}

@@ -1,0 +1,85 @@
+.edinfomaincontainer {
+    padding: 5vh 0vw;
+    display: flex;
+}
+
+.edinfosection2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.edinfosec2header {
+    color: #0eaae3;
+    font-size: 2rem;
+}
+
+.edinfodec2desc {
+    color: #595959;
+    margin-top: 3vh;
+    font-size: 1.1rem;
+}
+
+.edinfodec2desc span {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.edinfolist {
+    display: flex;
+    gap: .5vw;
+}
+
+.edinfolist i {
+    color: #0eaae3;
+    font-size: 1.2rem
+}
+
+.edinfolistdesc ul {
+    padding-left: 1vw;
+}
+
+.edinfolistdesc ul li::marker {
+    color: #0eaae3;
+}
+
+.edinfolistdesc p {
+    font-size: 1.2rem
+}
+
+.edinfolists{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+@media only screen and (max-width : 480px) {
+    .edinfomaincontainer{
+        /* display: none; */
+        flex-direction: column;
+    }
+
+    .edinfosec2header{
+        font-size: 1.3rem;
+        padding: 0vh 4vw;
+    }
+    
+    .edinfodec2desc{
+        padding: 0vh 4vw;
+        font-size: 1rem;
+    }
+
+    .edinfolist{
+        padding: 0vh 4vw;
+        gap: 2vw;
+    }
+
+    .edinfolist p{
+        font-weight: 600;
+    }
+
+    .edinfolist ul{
+        font-size: 1rem;
+    }
+}
