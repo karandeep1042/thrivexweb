@@ -154,6 +154,17 @@ export default function Navbar() {
               <Link to='/qlik' className="navbarserviceddoption">Qlik </Link>
             </div>
           </div>
+          <div className="navbarservices" id='navbarservices'>
+            <div id="navbarserviceinfo">
+              <p>Data & AI</p><i className="fa-solid fa-angle-down "></i>
+            </div>
+            <div className="navbarserviceddmenu">
+              <Link to='/dataai' className="navbarserviceddoption">Data & AI </Link>
+              <Link to='/qlik' className="navbarserviceddoption">Data Engineering </Link>
+              <Link to='/qlik' className="navbarserviceddoption">Insights & Analytics </Link>
+              <Link to='/qlik' className="navbarserviceddoption">AI & ML</Link>
+            </div>
+          </div>
           {navbaroptionsaarr.map((item, index) => (
             <Link to={item.link} className="navbaroption" key={index}>
               {item.title}

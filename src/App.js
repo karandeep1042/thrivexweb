@@ -26,6 +26,7 @@ import SapbtpAppointment from "./Pages/SAPBPT Page/SapbtpAppointment";
 import ContactUsPage from "./Pages/Contact Page/ContactUsPage";
 import BrowseBlogs from "./Pages/Blogs Page/BrowseBlogs";
 import QlikPage from "./Pages/Qlik Page/QlikPage";
+import DataAi from "./Pages/Data & AI/Data & AI/DataAi";
 
 function App() {
 
@@ -58,6 +59,7 @@ function App() {
           <Route path="/contact" element={<ContactUsPage/>} />
           <Route path="/browseblogs" element={<BrowseBlogs/>} />
           <Route path="/qlik" element={<QlikPage/>} />
+          <Route path="/dataai" element={<DataAi/>} />
         </Routes>
       </BrowserRouter>
     </>

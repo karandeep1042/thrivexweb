@@ -1,0 +1,37 @@
+.dataaicards2maincontainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.dataaicards2maincontainerheader{
+    padding: 0vh 4vw;
+    font-size: 2rem;
+    color: #0eaae3;
+    /* font-weight: 600; */
+}
+
+.dataaicards2maincontainercards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.dataaicards2maincontainercard{
+    width: 350px;
+    height: 130px;
+    border: 1px solid #d3d3d3;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.dataaicards2maincontainercard img{
+    width: 70%;
+}
+
+.dataaicards2maincontainercard:hover{
+    transform: scale(1.02);
+}
