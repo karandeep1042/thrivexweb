@@ -160,9 +160,9 @@ export default function Navbar() {
             </div>
             <div className="navbarserviceddmenu">
               <Link to='/dataai' className="navbarserviceddoption">Data & AI </Link>
-              <Link to='/qlik' className="navbarserviceddoption">Data Engineering </Link>
-              <Link to='/qlik' className="navbarserviceddoption">Insights & Analytics </Link>
-              <Link to='/qlik' className="navbarserviceddoption">AI & ML</Link>
+              <Link to='/dataengineering' className="navbarserviceddoption">Data Engineering </Link>
+              <Link to='/insightsanalytics' className="navbarserviceddoption">Insights & Analytics </Link>
+              <Link to='/aiml' className="navbarserviceddoption">AI & ML</Link>
             </div>
           </div>
           {navbaroptionsaarr.map((item, index) => (

@@ -5,13 +5,15 @@ import MuiPhoneNumber from 'material-ui-phone-number'
 export default function DataAIContactForm() {
     return (
         <>
-            <div className='careerappformheadercontainer' style={{ marginTop: '17vh' }}>
-                Let’s start a conversation.
+            <div className='careerappformheadercontainer' >
+                <p >
+                    Transform your <b>business</b> with <b>Data</b> and <b>AI</b>
+                </p>
             </div>
             <div className='sapbtpappointmentmaincontainer' style={{ marginTop: '4vh' }}>
                 <div className='sapbtpformsection'>
                     <div className='sapbtpformheader'>
-                        Tell us about your needs
+                        Let's Connect: We would love to hear from you
                     </div>
                     <div className='sapbtpformbody'>
                         <div className='sapbtpinputbox sapbtpselect sapbtpselect2'>
@@ -73,16 +75,6 @@ export default function DataAIContactForm() {
                         <div className='sapbtpsendmsgbtn'>
                             Send Message <i class="fa-solid fa-paper-plane"></i>
                         </div>
-                    </div>
-                </div>
-                <div className='sapbtpinfosection'>
-                    <div className='sapbtpsocialcontainer'>
-                        <i class="fa-solid fa-envelope"></i>
-                        connect@thethrivex.com
-                    </div>
-                    <div className='sapbtpsocialcontainer'>
-                        <i class="fa-solid fa-phone"></i>
-                        +91-70434 70009
                     </div>
                 </div>
             </div>

@@ -6,12 +6,13 @@ export default function DataAIHero() {
         <>
             <div className="aboutheroheader" >
                 <p>Data & AI</p>
+                <p style={{fontSize:'1.7rem',marginTop:'4vh'}}>Leverage the power of data & AI to drive decisions, enhance business efficiencies, and gain a competitive edge                            </p>
             </div>
             <div className="dtsheromaincontainer">
                 <div className="aboutherosection1">
                     <div className="ahs1info">
                         <div className="aboutherosection1infoheader" style={{ color: '#0eaae3' }}>
-                            <p>Leverage the power of data & AI to drive decisions, enhance business efficiencies, and gain a competitive edge                            </p>
+
                         </div>
                         <div className="aboutherosection1infodescription">
                             In the pursuit of staying ahead in the competitive landscape, companies are increasingly focused on effectively harnessing their data to avoid falling behind emerging competitors entering their industries. The urgency has been amplified by geopolitical tensions and the global pandemic, with digitization, data utilization, and advancements in AI/ML emerging as top strategic priorities across all sectors.<br /><br />

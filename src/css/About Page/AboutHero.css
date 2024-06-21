@@ -6,19 +6,16 @@
 }
 
 .aboutheroheader p {
-    padding-left: 2vw;
+    padding-left: 4vw;
     border-left: 2px solid #0eaae3;
 }
 
 .aboutheroheader {
     background-color: transparent;
     background-image: linear-gradient(180deg, #e1f5fe 60%, #ffffff 85%);
-    /* width: 50vw; */
     color: #0eaae3;
     padding-top: 20vh;
-    /* padding-left: 4vw; */
-    padding-bottom: 5vh;
-    font-size: 2.1rem;
+    font-size: 3rem;
     width: 100%;
 }
 
@@ -26,13 +23,15 @@
     width: 45%;
     display: flex;
     flex-direction: column;
+    /* position: relative;
+    top: -10px; */
     /* gap: 8vh; */
     justify-content: space-evenly;
     padding: 0vh 4vw;
 }
 
 .aboutherosection1infoheader {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .aboutherosection1infoheader p span {
@@ -41,7 +40,7 @@
 }
 
 .aboutherosection1infodescription {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     color: #595959;
     text-wrap: wrap;
     word-spacing: .4cap;
@@ -60,6 +59,8 @@
 }
 
 .ahs1peopleheader {
+    /* display: flex;
+    gap: ; */
     font-size: 2.5rem;
     color: #0eaae3;
 }
@@ -70,10 +71,9 @@
 }
 
 .aboutherosection2 {
-    width: 45vw;
-
+    width: 35vw;
     padding-bottom: 5vh;
-    height: 65vh;
+    height: 45vh;
     display: flex;
     -webkit-mask-image: url("../../Resources/blob\ \(1\).svg");;
     mask-size: 100% 100%;

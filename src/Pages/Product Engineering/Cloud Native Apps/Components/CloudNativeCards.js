@@ -30,12 +30,12 @@ export default function CloudNativeCards() {
             description: 'Maintain flexibility by avoiding dependency on a single provider.'
         },
         {
-            img: img4,
+            img: img5,
             title: 'Scalability and Flexibility',
             description: 'Adapt to changing demands with real-time performance improvements.'
         },
         {
-            img: img4,
+            img: img6,
             title: 'Improved Customer Experience',
             description: ' Deliver continuous updates and improvements, enhancing customer satisfaction and loyalty.'
         },

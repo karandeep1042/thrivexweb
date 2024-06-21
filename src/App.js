@@ -27,6 +27,9 @@ import ContactUsPage from "./Pages/Contact Page/ContactUsPage";
 import BrowseBlogs from "./Pages/Blogs Page/BrowseBlogs";
 import QlikPage from "./Pages/Qlik Page/QlikPage";
 import DataAi from "./Pages/Data & AI/Data & AI/DataAi";
+import DataEngineering from "./Pages/Data & AI/Data Engineering/DataEngineering";
+import InsightsAnalytics from "./Pages/Data & AI/Insights & Analytics/InsightsAnalytics";
+import AIML from "./Pages/Data & AI/AI & ML/AIML";
 
 function App() {
 
@@ -60,6 +63,9 @@ function App() {
           <Route path="/browseblogs" element={<BrowseBlogs/>} />
           <Route path="/qlik" element={<QlikPage/>} />
           <Route path="/dataai" element={<DataAi/>} />
+          <Route path="/dataengineering" element={<DataEngineering/>} />
+          <Route path="/insightsanalytics" element={<InsightsAnalytics/>} />
+          <Route path="/aiml" element={<AIML/>} />
         </Routes>
       </BrowserRouter>
     </>

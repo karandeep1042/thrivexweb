@@ -15,11 +15,17 @@
     color: #0eaae3;
 }
 
+.careerappformheadercontainer p{
+    padding-left: 2vw;
+}
+
 .careerappformheadercontainer {
     font-size: 2.5rem;
     color: #0eaae3;
-    text-align: center;
-    font-weight: 600;
+    padding: 5vh 0;
+    padding-top: 10vh;
+    /* text-align: center; */
+    /* font-weight: 600; */
 }
 
 .careerappformdesc {

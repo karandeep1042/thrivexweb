@@ -11,17 +11,20 @@ export default function DataAICards() {
         {
             logo: img5,
             title: 'Data Engineering',
-            link: '/softwaredevelopment'
+            link: '/dataengineering',
+            info: 'Optimize data infrastructure, build robust pipelines, and ensure data integrity and security. Empower your business with reliable, actionable insights for informed decision-making and sustainable growth'
         },
         {
             logo: img2,
             title: 'Insights & Analytics',
-            link: '/modernization'
+            link: '/insightsanalytics',
+            info: 'Unlock the value of data by delivering impactful insights tailored to your business needs. Enhance customer experiences and empower every facet of your business operations'
         },
         {
             logo: img3,
             title: 'Data Science & AI',
-            link: '/cloudnative'
+            link: '/aiml',
+            info: 'Unleash the power of data science and AI to uncover fresh opportunities, solve complex customer challenges, and unlock significant value. Utilize our expertise in data-driven technologies to deliver solutions that drive business growth.'
         },
     ]
 
@@ -31,16 +34,22 @@ export default function DataAICards() {
                 <div className='allengsercardsheader'>
                     Powering Your Success: Our Core Capabilities
                 </div>
-                <div className='allengsercards' style={{justifyContent:'space-around'}} >
+                <div className='allengsercards' >
                     {cardinfo.map((item, index) => (
-                        <Link to={item.link} className='allengsercard'>
-                            <div className='allengsercardimg'>
-                                <img src={item.logo} />
+                        <div className='dataaicard'>
+                            <div className="dataaicardimage">
+                                <img src={item.logo} alt="" />
                             </div>
-                            <div className='allengsercardheading'>
-                                {item.title}
+                            <div className="dataaicardinfo">
+                                <label>{item.title}</label>
+                                <p>{item.info}</p>
                             </div>
-                        </Link>
+                            <div className="dataaiexplorebtn">
+                                <div className="dataaibtncontainer">
+                                    Explore<i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
                     ))}
                 </div>
             </div>

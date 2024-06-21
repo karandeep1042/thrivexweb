@@ -47,8 +47,9 @@
 
 .sapbtpformheader {
     font-size: 2rem;
-    font-weight: 600;
+    /* font-weight: 600; */
     padding: 4vh 2vw;
+    padding-bottom: 10vh;
     color: #0eaae3;
 }
 
@@ -69,6 +70,7 @@
 }
 
 .sapbtpinputbox label {
+    font-size: 1.35rem;
     font-weight: 600;
 }
 
@@ -81,6 +83,7 @@
     outline: none;
     border: 0;
     padding: 1.5vh .5vw;
+    font-size: 1.3rem;
 }
 
 .sapbtpinputbox textarea {
@@ -88,6 +91,7 @@
     outline: none;
     border: 0;
     padding: 1vh .5vw;
+    font-size: 1.3rem;
 }
 
 .sapbtptextarea {
@@ -132,6 +136,7 @@
     background-color: #f2f2f2;
     outline: none;
     border: 0;
+    font-size: 1.3rem;
 }
 
 .sapbtpsocialcontainer {
@@ -173,38 +178,39 @@
     /* font-weight: 600; */
 }
 
-@media only screen and (max-width : 480px){
-    .sapbtpappointmentmaincontainer{
+@media only screen and (max-width : 480px) {
+    .sapbtpappointmentmaincontainer {
         display: flex;
         flex-direction: column;
     }
 
-    .sapbtpformsection{
+    .sapbtpformsection {
         width: 100%;
     }
 
-    .sapbtpinfosection{
+    .sapbtpinfosection {
         width: 100%;
     }
 
-    .sapbtpformbody{
+    .sapbtpformbody {
         padding: 0;
         width: 100%;
         justify-content: center;
     }
 
-    .sapbtpinputbox{
+    .sapbtpinputbox {
         width: 90%;
     }
 
-    .sapbtpprivacypolicy{
+    .sapbtpprivacypolicy {
         width: 90%;
     }
-    
-    .sapbtpformheader{
+
+    .sapbtpformheader {
         display: flex;
         font-size: 1.9rem;
         justify-content: center;
         padding: 5vh 0;
+
     }
 }
