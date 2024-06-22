@@ -16,9 +16,9 @@ export default function DataEngineeringInfo2() {
                         <div className="dtsinfolist">
                             <div className="dtsinfolistheader">
                                 {/* <i class="fa-solid fa-check"></i> */}
-                                <p style={{ fontSize: '1.4rem' }}>Modernize Your Data Infrastructure</p>
+                                <p style={{ fontSize: '1.5rem' }}>Modernize Your Data Infrastructure</p>
                             </div>
-                            <div className="dtsinfolistedescription" style={{ fontSize: '1.2rem' }}>
+                            <div className="dtsinfolistedescription" style={{ fontSize: '1.35rem' }}>
                                 Modernize your data infrastructure with our comprehensive cloud data services. Whether migrating from legacy systems or integrating modern frameworks, leverage our in-house tools to enhance performance and streamline data management. Our proficiency in data migration frameworks and governance tools ensures a seamless transition to a modern data platform. Benefit from optimized data operations while minimizing disruption and maximizing efficiency.
                             </div>
                         </div>

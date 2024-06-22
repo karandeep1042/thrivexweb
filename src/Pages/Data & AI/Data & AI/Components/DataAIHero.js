@@ -6,7 +6,7 @@ export default function DataAIHero() {
         <>
             <div className="aboutheroheader" >
                 <p>Data & AI</p>
-                <p style={{fontSize:'1.7rem',marginTop:'4vh'}}>Leverage the power of data & AI to drive decisions, enhance business efficiencies, and gain a competitive edge                            </p>
+                <p style={{fontSize:'1.7rem',marginTop:'4vh'}}>Leverage the power of data & AI to drive decisions, enhance business efficiencies, and gain a competitive edge</p>
             </div>
             <div className="dtsheromaincontainer">
                 <div className="aboutherosection1">

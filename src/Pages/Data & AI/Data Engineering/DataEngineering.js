@@ -19,7 +19,7 @@ export default function DataEngineering() {
             <DataEngineeringInfo2 />
             <DataEngineeringHero3 />
             <DataAIContactForm />
-            <RelatedTopics/>
+            {/* <RelatedTopics/> */}
             <Footer />
         </>
     )

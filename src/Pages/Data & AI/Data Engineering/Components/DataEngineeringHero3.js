@@ -13,31 +13,31 @@ export default function DataEngineeringHero3() {
                         <div className="dtsinfolist">
                             <div className="dtsinfolistheader">
                                 <i class="fa-solid fa-check"></i>
-                                <p style={{ fontSize: '1.4rem' }}>Experience enhanced data reliability, relevance, and accessibility</p>
+                                <p style={{ fontSize: '1.35rem' }}>Experience enhanced data reliability, relevance, and accessibility</p>
                             </div>
                         </div>
                         <div className="dtsinfolist">
                             <div className="dtsinfolistheader">
                                 <i class="fa-solid fa-check"></i>
-                                <p style={{ fontSize: '1.4rem' }}>Improve decision-making capabilities with actionable insights</p>
+                                <p style={{ fontSize: '1.35rem' }}>Improve decision-making capabilities with actionable insights</p>
                             </div>
                         </div>
                         <div className="dtsinfolist">
                             <div className="dtsinfolistheader">
                                 <i class="fa-solid fa-check"></i>
-                                <p style={{ fontSize: '1.4rem' }}>Streamline data operations for increased operational efficiency</p>
+                                <p style={{ fontSize: '1.35rem' }}>Streamline data operations for increased operational efficiency</p>
                             </div>
                         </div>
                         <div className="dtsinfolist">
                             <div className="dtsinfolistheader">
                                 <i class="fa-solid fa-check"></i>
-                                <p style={{ fontSize: '1.4rem' }}>Achieve seamless integration and migration to modern data platforms</p>
+                                <p style={{ fontSize: '1.35rem' }}>Achieve seamless integration and migration to modern data platforms</p>
                             </div>
                         </div>
                         <div className="dtsinfolist">
                             <div className="dtsinfolistheader">
                                 <i class="fa-solid fa-check"></i>
-                                <p style={{ fontSize: '1.4rem' }}>Enhance security and compliance through robust data governance</p>
+                                <p style={{ fontSize: '1.35em' }}>Enhance security and compliance through robust data governance</p>
                             </div>
                         </div>
                     </div>

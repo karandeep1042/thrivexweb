@@ -19,7 +19,7 @@ export default function InsightsAnalytics() {
             <InsightsAnalyticsHero2 />
             <DataAICards2 />
             <DataAIContactForm />
-            <RelatedTopics/>
+            {/* <RelatedTopics/> */}
             <Footer />
         </>
     )

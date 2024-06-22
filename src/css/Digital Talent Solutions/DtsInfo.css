@@ -1,6 +1,7 @@
 .dtsinfolistheader {
     display: flex;
     align-items: center;
+    margin-bottom: 2vh;
     gap: .5vw;
 }
 
@@ -10,11 +11,12 @@
 
 .dtsinfolistheader p {
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 
 .dtsinfolistedescription {
     color: #595959;
+    font-size: 1rem;
 }
 
 @media only screen and (max-width : 480px) {

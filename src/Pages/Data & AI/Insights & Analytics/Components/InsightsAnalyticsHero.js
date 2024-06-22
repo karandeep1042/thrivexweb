@@ -6,12 +6,13 @@ export default function InsightsAnalyticsHero() {
         <>
             <div className="aboutheroheader" >
                 <p>Insights & Analytics</p>
+                <p style={{fontSize:'1.7rem',marginTop:'4vh'}}>Unlock the full potential of your data by transforming it into actionable insights through impactful visualizations and effective data storytelling</p>
             </div>
             <div className="dtsheromaincontainer">
                 <div className="aboutherosection1">
                     <div className="ahs1info">
                         <div className="aboutherosection1infoheader" style={{ color: '#0eaae3' }}>
-                            <p>Unlock the full potential of your data by transforming it into actionable insights through impactful visualizations and effective data storytelling</p>
+                            <p></p>
                         </div>
                         <div className="aboutherosection1infodescription">
                             In today’s ever-changing market landscape, staying ahead and leveraging consumer behavior trends is paramount. To transform rich data sources into meaningful narratives, a reliable partner is essential. BI solutions are needed to derive precise insights and swiftly make strategic and tactical decisions.<br /><br />
