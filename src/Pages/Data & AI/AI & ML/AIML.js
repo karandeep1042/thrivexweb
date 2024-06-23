@@ -8,6 +8,7 @@ import AIMLInfo2 from './Components/AIMLInfo2'
 import DataAICards2 from '../Data & AI/Components/DataAICards2'
 import DataAIContactForm from '../Data & AI/Components/DataAIContactForm'
 import RelatedTopics from '../Insights & Analytics/Components/RelatedTopics'
+import ContactPage from '../../Contact Page/ContactPage'
 
 export default function AIML() {
     return (
@@ -18,8 +19,7 @@ export default function AIML() {
             <AIMLInfo />
             <AIMLInfo2 />
             <DataAICards2 />
-            <DataAIContactForm />
-            {/* <RelatedTopics /> */}
+            <ContactPage />
             <Footer />
         </>
     )

@@ -117,12 +117,13 @@ export default function Navbar() {
             <div className="navbarserviceddmenu">
               <Link to='/experiencedesign' className="navbarserviceddoption">Experience Design</Link>
               <Link className="enterpriseApp" id="enterpriseApp">
-                <div className="navbarserviceddoption">Data & Analytics Applications</div>
+                <div className="navbarserviceddoption">Data & AI</div>
                 <i className="fa-solid fa-angle-left ealogo"></i>
                 <div className="eamenu">
-                  <Link to='/dataservices' className="navbarserviceddoption">Data Services</Link>
-                  <Link to='/buisnessintelligence' className="navbarserviceddoption">Buisness Intelligence</Link>
-                  <Link to='/aiandml' className="navbarserviceddoption">AI & ML Services</Link>
+                  <Link to='/dataai' className="navbarserviceddoption">Data & AI</Link>
+                  <Link to='/dataengineering' className="navbarserviceddoption">Data Engineering</Link>
+                  <Link to='/insightsanalytics' className="navbarserviceddoption">Insights & Analytics</Link>
+                  <Link to='/aiml' className="navbarserviceddoption">AI & ML</Link>
                 </div>
               </Link>
               <Link className="enterpriseApp" id="enterpriseApp">
@@ -150,11 +151,11 @@ export default function Navbar() {
               <p>Platforms</p><i className="fa-solid fa-angle-down "></i>
             </div>
             <div className="navbarserviceddmenu">
-              <Link to='/sapbpt' className="navbarserviceddoption">SAP BTP </Link>
+              <Link to='/sapbtp' className="navbarserviceddoption">SAP BTP </Link>
               <Link to='/qlik' className="navbarserviceddoption">Qlik </Link>
             </div>
           </div>
-          <div className="navbarservices" id='navbarservices'>
+          {/* <div className="navbarservices" id='navbarservices'>
             <div id="navbarserviceinfo">
               <p>Data & AI</p><i className="fa-solid fa-angle-down "></i>
             </div>
@@ -164,7 +165,7 @@ export default function Navbar() {
               <Link to='/insightsanalytics' className="navbarserviceddoption">Insights & Analytics </Link>
               <Link to='/aiml' className="navbarserviceddoption">AI & ML</Link>
             </div>
-          </div>
+          </div> */}
           {navbaroptionsaarr.map((item, index) => (
             <Link to={item.link} className="navbaroption" key={index}>
               {item.title}

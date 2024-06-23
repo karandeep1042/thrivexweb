@@ -17,7 +17,7 @@ export default function Sapbpt() {
             <SapbtpHero2/>
             <SapbtpCards1/>
             <SapbtpCards2/>
-            <ContactPage/>
+            <ContactPage desc="Explore how THRIVEX can help you leverage SAP BTP to drive innovation and business growth. Contact our team of experts today to learn more about our services and solutions."/>
             <Footer />
         </>
     )

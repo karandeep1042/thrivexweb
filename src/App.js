@@ -57,7 +57,7 @@ function App() {
           <Route path="/cloudnative" element={<CloudNative/>} />
           <Route path="/career" element={<Career/>} />
           <Route path="/integration" element={<Integration/>} />
-          <Route path="/sapbpt" element={<Sapbpt/>} />
+          <Route path="/sapbtp" element={<Sapbpt/>} />
           <Route path="/sapbptappointment" element={<SapbtpAppointment/>} />
           <Route path="/contact" element={<ContactUsPage/>} />
           <Route path="/browseblogs" element={<BrowseBlogs/>} />

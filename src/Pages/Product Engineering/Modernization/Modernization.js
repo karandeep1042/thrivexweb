@@ -6,6 +6,7 @@ import Modernizationinfo from './Components/Modernizationinfo'
 import Modernizationcards from './Components/Modernizationcards'
 import SWdevhead from '../Software Development/Components/SWdevhead'
 import ContactPage from '../../Contact Page/ContactPage'
+import AllEngineeringServices from '../Software Development/Components/AllEngineeringServices'
 
 export default function Modernization() {
   return (
@@ -15,6 +16,7 @@ export default function Modernization() {
       <Modernizationcards/>
       <Modernizationinfo/>
       <SWdevhead/>
+      <AllEngineeringServices name="Modernization"/>
       <ContactPage/>
       <Footer/>
     </>

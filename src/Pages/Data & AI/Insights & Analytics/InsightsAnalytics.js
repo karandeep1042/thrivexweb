@@ -8,6 +8,7 @@ import InsightsAnalyticsHero2 from './Components/InsightsAnalyticsHero2'
 import DataAICards2 from '../Data & AI/Components/DataAICards2'
 import DataAIContactForm from '../Data & AI/Components/DataAIContactForm'
 import RelatedTopics from './Components/RelatedTopics'
+import ContactPage from '../../Contact Page/ContactPage'
 
 export default function InsightsAnalytics() {
     return (
@@ -18,8 +19,7 @@ export default function InsightsAnalytics() {
             <InsightsAnalyticsInfo />
             <InsightsAnalyticsHero2 />
             <DataAICards2 />
-            <DataAIContactForm />
-            {/* <RelatedTopics/> */}
+            <ContactPage />
             <Footer />
         </>
     )

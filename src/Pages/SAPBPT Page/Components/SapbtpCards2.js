@@ -71,7 +71,7 @@ export default function SapbtpCards2() {
                         </li>
                     </ul>
                 </div>
-                <div className='sapbtpappointmentrequestcard'>
+                {/* <div className='sapbtpappointmentrequestcard'>
                     <div className='sapbtpappointmentrequestcardsec1'>
                         <img src={img1} />
                     </div>
@@ -82,7 +82,7 @@ export default function SapbtpCards2() {
                         </div>
                         <Link to='/sapbptappointment' className='sapbtpappointmentrequestcardbtn'><i className="fa-solid fa-arrow-right"></i>Request an appointment</Link>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

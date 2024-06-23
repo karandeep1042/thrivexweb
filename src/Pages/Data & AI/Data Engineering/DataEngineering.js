@@ -8,6 +8,7 @@ import DataEngineeringInfo2 from './Components/DataEngineeringInfo2'
 import DataEngineeringHero3 from './Components/DataEngineeringHero3'
 import DataAIContactForm from '../Data & AI/Components/DataAIContactForm'
 import RelatedTopics from '../Insights & Analytics/Components/RelatedTopics'
+import ContactPage from '../../Contact Page/ContactPage'
 
 export default function DataEngineering() {
     return (
@@ -18,8 +19,7 @@ export default function DataEngineering() {
             <DataEngineeringHero2 />
             <DataEngineeringInfo2 />
             <DataEngineeringHero3 />
-            <DataAIContactForm />
-            {/* <RelatedTopics/> */}
+            <ContactPage />
             <Footer />
         </>
     )
