@@ -6,23 +6,23 @@ export default function AIMLHero2() {
     const cardinfo = [
         {
             logo: 'fa-solid fa-crosshairs',
-            title: 'Business Focused',
-            desc: 'Our approach begins with a thorough understanding of your business goals and requirements, ensuring that every aspect of the software development aligns with your strategic objectives.',
+            title: 'Foundational Machine Learning',
+            desc: 'Utilize foundational ML algorithms for pricing optimization, consumer segmentation, analysis & prediction, and inventory forecasting',
         },
         {
             logo: 'fa-solid fa-rotate',
-            title: 'Leading Practices',
-            desc: 'We implement industry-leading development practices and technologies to create experiences and solutions that exceed expectations every time.',
+            title: 'MLOps',
+            desc: 'Streamline deployment of ML models with automated CI/CD pipelines, real-time monitoring, scalability solutions, and governance frameworks',
         },
         {
             logo: 'fa-solid fa-lightbulb',
-            title: 'Drives Innovation',
-            desc: 'We implement industry-leading development practices and technologies to create experiences and solutions that exceed expectations every time.',
+            title: 'Advanced AI',
+            desc: 'Harness deep learning for OCR, NLP, computer vision, text summarization, chatbots, and real-time inferencing',
         },
         {
             logo: 'fa-solid fa-gem',
-            title: 'Value Creation',
-            desc: 'At the core of our approach is a focus on quality, enabling us to drive efficiencies and reduce costs through our rigorous project monitoring services.',
+            title: 'AI Industrialization',
+            desc: 'Automate processes and optimize operations with feature engineering, cognitive automation, model management, cataloging, and monitoring.',
         },
         {
             logo: 'fa-solid fa-brain',

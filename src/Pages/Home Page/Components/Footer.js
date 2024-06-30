@@ -12,14 +12,12 @@ export default function Footer() {
             <img src={img} alt="" />
           </div>
           <div className="footerdescription">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            officia optio autem nemo quis nesciunt ratione magnam ipsa
-            exercitationem qui!
+
           </div>
           <div className="footersocialmediaicons">
-            <div className="footersmicon">
+            {/* <div className="footersmicon">
               <i class="fa-brands fa-facebook-f"></i>
-            </div>
+            </div> */}
             <div className="footersmicon">
               <i class="fa-brands fa-x-twitter"></i>
             </div>
@@ -34,16 +32,45 @@ export default function Footer() {
         <div className="footersection2">
           <div className="footersection2header">Useful links</div>
           <div className="footersection2links">
-            <Link to='/digitaltalentsolutions' className="footersection2link">Digital Talent Solutions</Link>
-            <Link className="footersection2link">Product Engineering</Link>
             <Link to='/experiencedesign' className="footersection2link">Experience Design</Link>
-            <Link className="footersection2link">Integrated Products & Platforms</Link>
-            <Link className="footersection2link">Enterprise Applications</Link>
-            <Link className="footersection2link">Data & Analytics</Link>
+            <div className="footersection2accordion">
+              <input type="checkbox" name="" id="first"/>
+              <label for="first">Data & AI</label>
+              <div className="footersection2accordiondesc">
+                <ul>
+                  <Link>Data Engineering</Link>
+                  <Link>Insights & Analytics</Link>
+                  <Link>AI & ML</Link>
+                </ul>
+              </div>
+            </div>
+            <div className="footersection2accordion">
+              <input type="checkbox" name="" id="second" />
+              <label for="second">Product Engineering</label>
+              <div className="footersection2accordiondesc">
+                <ul>
+                  <Link>Software Develpoment</Link>
+                  <Link>Modernization</Link>
+                  <Link>Cloud Native</Link>
+                  <Link>Enterprise Integration</Link>
+                </ul>
+              </div>
+            </div>
+            <div className="footersection2accordion">
+              <input type="checkbox" name="" id="third" />
+              <label for="third">Enterprise Application</label>
+              <div className="footersection2accordiondesc">
+                <ul>
+                  <Link>SAP S/4HANA</Link>
+                  <Link>SAP Technology Services</Link>
+                </ul>
+              </div>
+            </div>
+            <Link to='/digitaltalentsolutions' className="footersection2link">Digital Talent Solutions</Link>
           </div>
         </div>
         <div className="footersection3">
-          <div className="fs3header">Contact info</div>
+          <div className="fs3header">Contact Info</div>
           <div className="fs3items">
             <div className="fs3item">
               <div className="fs3itemsec1">
@@ -74,7 +101,7 @@ export default function Footer() {
                   Mumbai – 400 065.
                   Maharashtra.
                 </p>
-                <span>Main office location</span>
+                <span>Office location</span>
               </div>
             </div>
           </div>

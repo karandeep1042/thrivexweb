@@ -52,7 +52,7 @@ export default function QlikCards() {
                     <div className="careercultureheader">
                         <p>Benefits of the Cloud-Native <span>Model </span></p>
                     </div>
-                    <p style={{ color: 'white', fontSize: '1.5rem', width: '70vw', textAlign: 'center', lineBreak: 'anywhere', width: '95%' }}>Let THRIVEX lead your seamless cloud-native transformation, ensuring your applications are modern, scalable, and resilient. Contact us to start your journey today.</p>
+                    <p style={{ color: 'white', fontSize: '1.5rem', width: '70vw', textAlign: 'center', width: '95%' }}>Let THRIVEX lead your seamless cloud-native transformation, ensuring your applications are modern, scalable, and resilient. Contact us to start your journey today.</p>
                     <div className="careerculturecards">
                         {cultureData.map((item, index) => (
                             <div className="careerculturecard" style={{ margin: '2vh 1vw' }}>

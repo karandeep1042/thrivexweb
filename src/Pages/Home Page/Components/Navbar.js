@@ -7,11 +7,11 @@ export default function Navbar() {
   const [sideBarActive, setSideBar] = useState(false);
   const [sideBarServiceActive, setSideBarService] = useState(false);
   const navbaroptionsaarr = [
-    { title: "Home", link: '/' },
-    { title: "About Us", link: '/about' },
-    { title: "Articles", link: '/browseblogs' },
-    { title: "Career", link: '/career' },
-    { title: "Contact", link: '/contact' },
+    // { title: "Home", link: '/' },
+    // { title: "About Us", link: '/about' },
+    { title: "Insights", link: '/browseblogs' },
+    // { title: "Career", link: '/career' },
+    // { title: "Contact", link: '/contact' },
   ];
 
   const changeNavBar = () => {
@@ -110,12 +110,24 @@ export default function Navbar() {
           <img src={img} alt="" />
         </div>
         <div className="navbaroptionssection">
+          <Link to='/' className="navbaroption">
+            Home
+          </Link>
           <div className="navbarservices" id='navbarservices'>
             <div id="navbarserviceinfo">
               <p>Services</p><i className="fa-solid fa-angle-down "></i>
             </div>
             <div className="navbarserviceddmenu">
               <Link to='/experiencedesign' className="navbarserviceddoption">Experience Design</Link>
+              {/* <Link className="enterpriseApp" id="enterpriseApp">
+                <div className="navbarserviceddoption">Data & AI_old</div>
+                <i className="fa-solid fa-angle-left ealogo"></i>
+                <div className="eamenu">
+                  <Link to='/dataservices' className="navbarserviceddoption">Data Services</Link>
+                  <Link to='/buisnessintelligence' className="navbarserviceddoption">Business Inteligence</Link>
+                  <Link to='/aiandml' className="navbarserviceddoption">AI & ML</Link>
+                </div>
+              </Link> */}
               <Link className="enterpriseApp" id="enterpriseApp">
                 <div className="navbarserviceddoption">Data & AI</div>
                 <i className="fa-solid fa-angle-left ealogo"></i>
@@ -133,6 +145,7 @@ export default function Navbar() {
                   <Link to='/softwaredevelopment' className="navbarserviceddoption">Software Development</Link>
                   <Link to='/modernization' className="navbarserviceddoption">Modernization</Link>
                   <Link to='/cloudnative' className="navbarserviceddoption">Cloud Native</Link>
+                  <Link to='/integration' className="navbarserviceddoption">Enterprise Integration</Link>
                 </div>
               </Link>
               <Link className="enterpriseApp" id="enterpriseApp">
@@ -155,22 +168,23 @@ export default function Navbar() {
               <Link to='/qlik' className="navbarserviceddoption">Qlik </Link>
             </div>
           </div>
-          {/* <div className="navbarservices" id='navbarservices'>
+          <div className="navbarservices" id='navbarservices'>
             <div id="navbarserviceinfo">
-              <p>Data & AI</p><i className="fa-solid fa-angle-down "></i>
+              <p>About</p><i className="fa-solid fa-angle-down "></i>
             </div>
             <div className="navbarserviceddmenu">
-              <Link to='/dataai' className="navbarserviceddoption">Data & AI </Link>
-              <Link to='/dataengineering' className="navbarserviceddoption">Data Engineering </Link>
-              <Link to='/insightsanalytics' className="navbarserviceddoption">Insights & Analytics </Link>
-              <Link to='/aiml' className="navbarserviceddoption">AI & ML</Link>
+              <Link to='/about' className="navbarserviceddoption">About Us</Link>
+              <Link to='/career' className="navbarserviceddoption">Career </Link>
             </div>
-          </div> */}
+          </div>
           {navbaroptionsaarr.map((item, index) => (
             <Link to={item.link} className="navbaroption" key={index}>
               {item.title}
             </Link>
           ))}
+          <Link to='/contact' className="navbaroption" id="contactusnavbaroption" >
+            Contact Us
+          </Link>
         </div>
         <i className="fa-solid fa-bars mbmenubtn" onClick={togglesidebar}></i>
       </div>

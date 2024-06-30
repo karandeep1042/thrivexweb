@@ -18,7 +18,7 @@ export default function DataAICards2() {
         <>
             <div className="dataaicards2maincontainer">
                 <div className="dataaicards2maincontainerheader">
-                    Technologies & Platforms
+                    Technologies & Platforms : We work with
                 </div>
                 <div className="dataaicards2maincontainercards">
                     {cardinfo.map((item, index) => (

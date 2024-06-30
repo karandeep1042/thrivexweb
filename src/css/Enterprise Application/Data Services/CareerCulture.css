@@ -76,7 +76,7 @@
 }
 
 .careeerculturecarddescription {
-    line-break: anywhere;
+    /* line-break: anywhere; */
     padding: 1vh .5vw;
     color: white;
     font-size: .7rem;

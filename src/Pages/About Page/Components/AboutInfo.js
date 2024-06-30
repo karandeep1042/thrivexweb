@@ -2,6 +2,7 @@ import React from "react";
 import "../../../css/Home Page/HomeInfo.css";
 import img1 from '../../../Resources/ba-006.webp'
 import '../../../css/About Page/AboutInfo.css'
+import { Link } from "react-router-dom";
 
 export default function AbuotInfo() {
   return (
@@ -28,7 +29,7 @@ export default function AbuotInfo() {
             <div className="aboutinfonewlist">
               <div className="aboutinfolistheader">
                 <i class="fa-solid fa-sun"></i>
-                <p>Bright</p>
+                <p>Agile</p>
               </div>
               <div className="aboutinfolistdescription">
                 We move with <span className="aboutinfolistdescriptionboldwords">agility</span>, building solutions quickly and <span className="aboutinfolistdescriptionboldwords">learning</span> even faster from setbacks. We're <span className="aboutinfolistdescriptionboldwords">obsessed with impact</span>, elivering <span className="aboutinfolistdescriptionboldwords">tangible results</span> that <span className="aboutinfolistdescriptionboldwords">exceed expectations.</span>
@@ -48,6 +49,13 @@ export default function AbuotInfo() {
                 Our dedication to our core values serves as the foundation for our unique culture, which prioritizes our customers.
               </p>
             </div>
+          </div>
+          <div className="homeinfoheader" style={{ color: '#0eaae3',marginTop:'5vh' }}>Join Our Team</div>
+          <div className="homeinfodescription">
+            <p>
+              Are you passionate about technology and making a difference? We're always looking for talented individuals to join our team. <br /><br />
+              Visit our <Link to='/career' style={{color:"#0eaae3"}}>Careers</Link> Page to learn more about our open positions.
+            </p>
           </div>
         </div>
         <div className="aboutherosection2">

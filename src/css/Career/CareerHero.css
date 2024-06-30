@@ -1,10 +1,12 @@
 .careerherohead2 {
     font-weight: 600;
     color: #0eaae3;
+    font-size: 2rem;
 }
 
 .careerdesc {
     color: #595959;
+    font-size: 1.35rem;
 }
 
 .careerdesc ul {
@@ -22,16 +24,19 @@
 .careerappformheadercontainer {
     font-size: 2.5rem;
     color: #0eaae3;
-    padding: 5vh 0;
+    padding-top: 5vh;
+    padding-left: 4vw;
+    font-weight: 600;
     /* padding-top: 10vh; */
     /* text-align: center; */
     /* font-weight: 600; */
 }
 
 .careerappformdesc {
-    text-align: center;
+    padding-left: 4vw;
+    /* text-align: center; */
     font-size: 1.5rem;
-    margin-top: 4vh;
+    margin-top: 2vh;
     color: #595959;
 }
 

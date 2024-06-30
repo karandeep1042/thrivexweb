@@ -80,12 +80,13 @@
 
 .contactpagebutton:hover {
   border: 1px solid #0eaae3;
-  color: #0eaae3;
+  background-color: #0eaae3;
+  color: white;
 }
 
 
 @media only screen and (max-width : 480px) {
-  .contactpageheader{
+  .contactpageheader {
     font-size: 1.6rem;
   }
 }

@@ -1,0 +1,52 @@
+.homepagesection2maincontainer{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
+    padding: 10vh 0;
+    /* margin-top: 5vh; */
+}
+
+.homepagesection2description{
+    margin-top: 3vh;
+}
+
+.homepagesection2buttoncontainer{
+    margin-top: 5vh;
+}
+
+.homepagesection2mainheader p{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #0eaae3;
+}
+
+.homepagesection2description p{
+    font-size: 1.35rem;
+    color: #595959;
+}
+
+.homepagesection2buttoncontainer{
+    display: flex;
+}
+
+.homepagesection2whowearebtn{
+    display: flex;
+    color: white;
+    background-color: #0eaae3;
+    padding: 10px 30px;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: .5vw;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.homepagesection2whowearebtn i{
+    padding-top: 5px;
+}
+
+.homepagesection2whowearebtn:hover{
+    transform: scale(1.02);
+}

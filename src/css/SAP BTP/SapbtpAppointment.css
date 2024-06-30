@@ -48,7 +48,8 @@
 .sapbtpformheader {
     font-size: 2rem;
     /* font-weight: 600; */
-    padding: 4vh 2vw;
+    padding: 4vh 0;
+    padding-left: 4vw;
     padding-bottom: 10vh;
     color: #0eaae3;
 }
@@ -57,7 +58,7 @@
     width: 65vw;
     display: flex;
     justify-content: space-between;
-    padding: 0vh 2vw;
+    padding: 0vh 4vw;
     flex-wrap: wrap;
 }
 

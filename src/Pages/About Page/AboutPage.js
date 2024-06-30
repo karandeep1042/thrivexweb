@@ -6,17 +6,19 @@ import AboutInfo from './Components/AboutInfo'
 import AboutContactForm from './Components/AboutContactForm'
 import ResumeForm from './Components/ResumeForm'
 import ContactPage from '../Contact Page/ContactPage'
+import Aboutinfo3 from './Components/Aboutinfo3'
+import AboutInfo2 from './Components/AboutInfo2'
 
 export default function AboutPage() {
   return (
     <>
-        <Navbar/>
-        <AboutHero/>
-        <AboutInfo/>
-        {/* <AboutContactForm/>  */}
-        <ContactPage/>
-        {/* <ResumeForm/> */}
-        <Footer/>
+      <Navbar />
+      <AboutHero />
+      {/* <Aboutinfo3 /> */}
+      <AboutInfo2 />
+      <AboutInfo />
+      <ContactPage desc="Together, let's embark on a journey of digital evolution and turn your vision into reality."/>
+      <Footer />
     </>
   )
 }

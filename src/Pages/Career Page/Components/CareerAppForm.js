@@ -74,7 +74,7 @@ export default function CareerAppForm() {
                         </div>
                     </div>
                 </div>
-                <div className='sapbtpinfosection'>
+                {/* <div className='sapbtpinfosection'>
                     <div className='sapbtpmainheader'>
                         <p>CONNECT WITH US</p>
                     </div>
@@ -96,7 +96,7 @@ export default function CareerAppForm() {
                             <p>Subscribe to out channel for the latest videos, tutorials and Thirvex stories.</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

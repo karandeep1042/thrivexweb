@@ -15,7 +15,7 @@ export default function Career() {
      <CareerInfo/>
      {/* <ResumeForm/> */}
      <CareerAppForm/>
-     <ContactPage/>
+     {/* <ContactPage/> */}
      <Footer/> 
     </>
   )

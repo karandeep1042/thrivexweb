@@ -9,7 +9,7 @@ export default function CareerInfo() {
                     <img src={img1} alt="" />
                 </div>
                 <div className="homeinfosection1">
-                    <div className="homeinfoheader" style={{ color: '#0eaae3' }}>
+                    <div className="homeinfoheader" style={{ color: '#0eaae3',fontWeight:'600' }}>
                         Are you our Ideal Candidate ?
                     </div>
                     <div className='careerherohead2'>
@@ -19,7 +19,7 @@ export default function CareerInfo() {
                             We seek corporate athletes who can excel in various settings. While no two Thrivex consultants are alike—our diversity is crucial to our success—there are key attributes we look for in each team member.
                         </p>
                     </div>
-                    <div className='careerherohead2'>
+                    <div className='careerherohead2' style={{fontSize:'1.6rem'}}>
                         Thrivex Athlete Attributes:
                     </div>
                     <div className="careerdesc" style={{ margin: '1vh 0vw' }}>
@@ -30,7 +30,7 @@ export default function CareerInfo() {
                             <li>Values the success of the team and team effort over individual accoladesSeeks a better model and believes in improving the way we work in this field</li>
                         </ul>
                     </div>
-                    <div className='careerherohead2'>
+                    <div className='careerherohead2' style={{fontSize:'1.6rem'}}>
                         Requisite Skills :
                     </div>
                     <div className="careerdesc" style={{ margin: '1vh 0vw' }}>

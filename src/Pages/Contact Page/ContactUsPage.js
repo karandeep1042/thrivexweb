@@ -93,7 +93,7 @@ export default function ContactUsPage() {
                         </div>
                     </div>
                 </div>
-                <div className='sapbtpinfosection'>
+                {/* <div className='sapbtpinfosection'>
                     <div className='sapbtpsocialcontainer'>
                         <i class="fa-solid fa-envelope"></i>
                         connect@thethrivex.com
@@ -102,7 +102,7 @@ export default function ContactUsPage() {
                         <i class="fa-solid fa-phone"></i>
                         +91-70434 70009
                     </div>
-                </div>
+                </div> */}
             </div>
             <Footer />
         </>

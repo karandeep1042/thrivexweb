@@ -8,7 +8,7 @@
   width: 28vw;
   display: flex;
   flex-direction: column;
-  gap: 6vh;
+  gap: 1.5vh;
 }
 
 .footerdescription {
@@ -78,6 +78,7 @@
 }
 
 .footersection2links a {
+  display: flex;
   color: white;
   text-decoration: none;
 }
@@ -131,15 +132,90 @@
   font-size: 0.8rem;
 }
 
+.footersection2accordiondesc ul {
+  margin-top: 1vh;
+  margin-left: 1.1vw;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.footersection2accordiondesc ul a {
+  transition: .3s;
+}
+
+.footersection2accordiondesc ul a:hover {
+  color: #0eaae3;
+}
+
+.footersection2accordionheader {
+  display: flex;
+  justify-content: space-between;
+  width: 12vw;
+  transition: .3s;
+}
+
+/* .footersection2accordionheader i{
+  transform: rotate(180deg);
+} */
+
+/* .footersection2accordion input[type="checkbox"] {
+  display: none;
+}
+
+.footersection2accordion .footersection2accordiondesc {
+  padding: 0;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s;
+}
+
+.footersection2accordion input[type="checkbox"]:checked+label+.footersection2accordiondesc {
+  max-height: 200px;
+} */
+
+.footersection2accordion label {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.footersection2accordion label::before {
+  content: '';
+  font-size: 1.5rem;
+}
+
+.footersection2accordion input[type='checkbox'] {
+  display: none;
+}
+
+.footersection2accordion .footersection2accordiondesc {
+  color: #595959;
+  max-height: 0px;
+  overflow: hidden;
+  font-size: 1rem;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.footersection2accordion input[type="checkbox"]:checked+label+.footersection2accordiondesc {
+  max-height: 400px;
+}
+
+.footersection2accordion input[type="checkbox"]:checked+label::before {
+  content: '';
+}
+
 @media only screen and (max-width : 480px) {
   .footermaincontainer {
-    /* display: none; */
     flex-wrap: wrap;
     padding: 5vh 5vw;
     gap: 5vh;
   }
 
-  .footerlogo{
+  .footerlogo {
     width: 50%;
   }
 
@@ -147,31 +223,31 @@
     width: 100%;
     gap: 2vh;
   }
-  
-  .footersocialmediaicons{
+
+  .footersocialmediaicons {
     gap: 15px;
   }
-  
+
   .footersection2 {
     padding-left: 0vw;
     width: 100%;
     gap: 3vh;
   }
-  
-  .footersection2links{
+
+  .footersection2links {
     gap: 2vh;
   }
 
-  .footersection2links a{
+  .footersection2links a {
     font-size: .9rem;
   }
-  
+
   .footersection3 {
     width: 100%;
     gap: 3vh;
   }
-  
-  .fs3items{
+
+  .fs3items {
     gap: 3vh;
   }
 }

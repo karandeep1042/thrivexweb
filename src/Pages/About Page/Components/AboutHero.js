@@ -9,28 +9,19 @@ export default function AboutHero() {
         <p>About Us</p>
       </div>
       <div className="aboutheromaincontainer">
-        <div className="aboutherosection2">
-          <img src={img1} alt="" />
-        </div>
         <div className="aboutherosection1">
           <div className="ahs1info">
             <div className="aboutherosection1infoheader">
-              <p><span>THIRVEX</span> at a Glance</p>
+              <p>Our <span>Story</span></p>
             </div>
             <div className="aboutherosection1infodescription">
-              THRIVEX is a digitally native firm specializing in digital transformation services and consulting. We apply our expertise in digital talent solutions, experience design, enterprise applications, product & platform engineering, and data & analytics solutions to rapidly assist enterprises in innovating for growth and driving smarter, data-driven performance.
-            </div>
-          </div>
-          <div className="ahs1people">
-            <div className="ahs1peopleheader">
-              Our People
-            </div>
-            <div className="ahs1peopledescription">
-              Our greatest strength lies in our people. We are shaped by their passion and the fabric of our culture.
+              THRIVEX Technologies started with a spark – a shared passion for using technology to revolutionize businesses. We envisioned a company that blends cutting-edge solutions with a strong emphasis on quality and innovation. Today, that spark has grown into a team of dedicated tech enthusiasts and experts, all committed to empowering your business with the latest solutions and insights.
             </div>
           </div>
         </div>
-
+        <div className="aboutherosection2">
+          <img src={img1} alt="" />
+        </div>
       </div>
     </>
   );

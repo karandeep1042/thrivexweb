@@ -20,7 +20,7 @@ export default function CareerHero() {
                             We're on the lookout for talented individuals to join the Thrivex team.
                         </div>
                         <div className='careerherohead2'>
-                            About Our Team :
+                            About Our Team 
                         </div>
                         <div className='careerdesc'>
                             Our greatest asset is our people. We cultivate a team of skilled professionals who are always ready to tackle challenges head-on. <br/><br/>

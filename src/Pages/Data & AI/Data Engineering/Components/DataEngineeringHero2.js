@@ -10,16 +10,16 @@ export default function DataEngineeringHero2() {
                         <div className="aboutherosection1infoheader" style={{ color: '#0eaae3' }}>
                             <p>Big Data Analytics</p>
                         </div>
-                        
+
                     </div>
-                    <div className="homeinfolists" style={{marginTop:'2vh'}}>
+                    <div className="homeinfolists" style={{ marginTop: '2vh' }}>
                         <div className="dtsinfolist">
                             <div className="dtsinfolistheader">
                                 {/* <i class="fa-solid fa-check"></i> */}
-                                <p style={{fontSize:'1.5rem'}}>Establish Your Foundation</p>
+                                <p style={{ fontSize: '1.5rem' }}>Transforming Challenges into Insights</p>
                             </div>
-                            <div className="dtsinfolistedescription" style={{fontSize:'1.35rem'}}>
-                                Maximize the value of your data with our expert data engineering services. We specialize in managing and optimizing data to tailor bespoke solutions that align with your business goals. From data architecture design to implementation, ensure your data is organized, relevant, and reliable to tackle business challenges with confidence. Our expertise spans data modernization, data platform optimization, master data management, and robust data governance frameworks.
+                            <div className="dtsinfolistedescription" style={{ fontSize: '1.35rem' }}>
+                                Transform raw data challenges into actionable insights with our data analytics consulting services. We align your data architecture with business objectives using industry-leading practices, managing the entire lifecycle from data collection to processing. Harness vast and complex datasets to drive informed decisions and optimize operations, anticipating customer behavior changes effectively.
                             </div>
                         </div>
                     </div>
