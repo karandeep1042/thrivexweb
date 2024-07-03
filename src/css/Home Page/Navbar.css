@@ -1,0 +1,336 @@
+.navbarmaincontainer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vh 0vw;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(206, 206, 206, 0.2), 0 6px 20px 0 rgba(238, 238, 238, 0.19);
+    transition: .3s ease-in-out;
+    z-index: 999;
+}
+
+.navbaractive {
+    height: 7vh;
+}
+
+.navbarlogosection {
+    padding: 1vh 2vw;
+}
+
+.navbarlogosection img {
+    height: 100%;
+}
+
+.navbaroptionssection {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    padding: 0vh 2vw;
+    font-weight: 500;
+}
+
+.navbaroptionssection a {
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+}
+
+.navbaroption {
+    padding: .5vh 0vw;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+}
+
+.navbaroption:hover {
+    border-bottom: 2px solid #0eaae3;
+}
+
+.logooptions i {
+    color: #0eaae3;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.logooptions {
+    display: flex;
+    gap: 1.5vw;
+}
+
+#navbarservices {
+    cursor: pointer;
+    position: relative;
+}
+
+#navbarserviceinfo {
+    display: flex;
+    gap: .5vw;
+}
+
+#navbarservices i {
+    color: #0eaae3;
+    transition: .3s;
+    font-size: 1.2rem;
+}
+
+#navbarservices:hover i {
+    transform: rotate(180deg);
+}
+
+.navbarserviceddmenu {
+    display: none;
+    border-top: 4px solid #0eaae3;
+    position: absolute;
+    width: 13vw;
+    z-index: 5;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(139, 139, 139, 0.2), 0 6px 20px 0 rgba(143, 143, 143, 0.19);
+}
+
+#navbarservices:hover .navbarserviceddmenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbarserviceddmenu a:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.navbarserviceddmenu a {
+    padding: 1vh .5vw;
+    cursor: pointer;
+}
+
+.eamenu {
+    display: none;
+    border-top: 4px solid #0eaae3;
+    position: absolute;
+    /* right: 0px; */
+    left: 100%;
+    top: 0;   
+    width: 13vw;
+    z-index: 5;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(139, 139, 139, 0.2), 0 6px 20px 0 rgba(143, 143, 143, 0.19);
+}
+
+#enterpriseApp:hover .eamenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.eamenu a:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.eamenu a {
+    padding: 1vh .5vw;
+    cursor: pointer;
+}
+
+.enterpriseApp:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+#enterpriseApp:hover .ealogo{
+    transform: rotate(0deg);
+}
+
+.enterpriseApp {    
+    position: relative;
+    transition: .3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh 0vw;
+    padding-right: .5vw;
+    cursor: pointer;
+}
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    height: 100vh;
+    width: 250px;
+    background-color: white;
+    display: none;
+    transition: all .4s;
+    flex-direction: column;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidedbarheader {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    font-weight: 600;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid rgb(233, 233, 233);
+}
+
+.sidedbarheader img {
+    padding: 0px 20px;
+    width: 50%;
+    height: 75%;
+}
+
+.sidedbarheader p {
+    color: #0eaae3;
+}
+
+.sidedbarheader i {
+    padding: 0px 15px;
+    font-size: 1.8rem;
+}
+
+.sidebaroptions {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebaroptions a {
+    color: black;
+    padding: 15px 20px;
+}
+
+.sidebaroptions a:hover {
+    background-color: #dbdbdb;
+}
+
+.mbmenubtn {
+    font-size: 2rem;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+    margin-right: 2vw;
+    color: #0eaae3;
+}
+
+#contactusnavbaroption{
+    padding: 10px 15px;
+    border: 1px solid #575757;
+}
+
+#contactusnavbaroption:hover{
+    background-color: #0eaae3;
+    color: white;
+    border: 1px solid #0eaae3;
+
+}
+
+/* For Mobile */
+
+@media only screen and (max-width : 480px) {
+    .navbarmaincontainer {
+        width: 100vw;
+        height: 7vh;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .mbmenubtn {
+        display: flex;
+    }
+
+    .navbaroptionssection {
+        display: none;
+    }
+
+    #navbarserviceinfo {
+        transition: .4s;
+        padding: 15px 20px;
+        gap: 2vw;
+    }
+
+    .sidebarangledown {
+        transition: .3s;
+    }
+
+    #navbarserviceinfo i {
+        color: #0eaae3;
+    }
+
+    .sidebarserviceddmenu {
+        border-top: 1px solid rgb(233, 233, 233);
+        display: none;
+        flex-direction: column;
+    }
+    
+    .sidebarserviceddmenu a {
+        font-size: .8rem;
+    }
+    
+    .mobileenterpriseApp{
+        font-size: .8rem;
+        padding: 15px 20px;
+    }
+    
+    .mobileeamenuheader{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transition: .3s;
+    }
+    
+    .mobileeamenuheader i{
+        color: #0eaae3;
+    }
+    
+    .mobileeamenu{
+        display: none;
+        border-top: 1px solid rgb(233, 233, 233);
+        padding: 1vh 0vw;
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .mobiledamenuheader{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transition: .3s;
+    }
+    
+    .mobiledamenuheader i{
+        color: #0eaae3;
+    }
+    
+    .mobiledamenu{
+        display: none;
+        border-top: 1px solid rgb(233, 233, 233);
+        padding: 1vh 0vw;
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    .mobilepemenuheader{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        transition: .3s;
+    }
+    
+    .mobilepemenuheader i{
+        color: #0eaae3;
+    }
+    
+    .mobilepemenu{
+        display: none;
+        border-top: 1px solid rgb(233, 233, 233);
+        padding: 1vh 0vw;
+        flex-direction: column;
+    }
+}

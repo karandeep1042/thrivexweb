@@ -1,0 +1,157 @@
+.swdevheadmaincontainer {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    gap: 5vw;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+}
+
+.swdevlistheader {
+    font-size: 1.2rem;
+    color: #0eaae3;
+    font-weight: 600;
+}
+
+.swdevheadlist {
+    margin: 0vh 0vw;
+}
+
+.swdevheadlist ul {
+    margin-top: 2vh;
+}
+
+.swdevheadlist ul li {
+    color: #595959;
+    margin-left: 1.5vw;
+}
+
+.allengsermaincontainer {
+    /* display: flex;
+    flex-direction: column; */
+    width: 90vw;
+    padding: 4vh 0vw;
+    padding-bottom: 8vh;
+}
+
+.allengsercard:hover {
+    transform: scale(1.02);
+}
+
+.allengsercard {
+    box-shadow: 0 4px 8px 0 rgba(139, 139, 139, 0.2), 0 6px 20px 0 rgba(136, 136, 136, 0.19);
+    cursor: pointer;
+    width: 470px;
+    height: 550px;
+    transition: .3s;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5vh;
+}
+
+.allengsercardimg {
+    width: 100%;
+    height: 40%;
+    background-color: #0eaae3;
+}
+
+.allengsercardheading {
+    background-color: #e1e1e1;
+    /* width: ; */
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    height: 120px;
+}
+
+.allengsermaincontainer {
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 90vw;
+    display: flex;
+    gap: 4vh;
+    font-size: 3rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.allengsercards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.allengsercardsheader{
+    font-size: 2rem;
+    padding-bottom: 4vh;
+    color: #0eaae3;
+}
+
+.allengsercardimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.dataaicard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+    /* height: 500px; */
+    border: 1px solid rgb(195, 195, 195);
+    padding: 10px;
+}
+
+.dataaicardimage{
+    width: 100%;
+    height: 250px;
+    /* height: 45%; */
+}
+
+.dataaicardimage img{
+    width: 100%;
+    height: 100%;
+}
+
+.dataaicardinfo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    gap: 2vh;
+}
+
+.dataaicardinfo label{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #595959;
+}
+
+.dataaicardinfo p{
+    /* line-break: anywhere; */
+    margin-top: 3vh;
+    font-size: 1.3rem;
+    color: #7f7f7f
+}
+
+.dataaiexplorebtn{
+    margin-top: 3vh;
+    width: 100%;
+}
+
+.dataaibtncontainer{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    color: #0eaae3;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dataaibtncontainer i{
+    font-size: 1.3rem;
+
+    padding-top: 5px;
+}

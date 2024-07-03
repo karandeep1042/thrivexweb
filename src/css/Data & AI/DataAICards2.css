@@ -1,0 +1,45 @@
+.dataaicards2maincontainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    padding-bottom: 5vh;
+}
+
+.dataaicards2maincontainerheader{
+    padding: 0vh 4vw;
+    font-size: 2rem;
+    color: #0eaae3;
+    /* font-weight: 600; */
+}
+
+.dataaicards2maincontainercards{
+    width: 92vw;
+    margin: 0 auto;
+    margin-top: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vw;
+    /* justify-content: space-between; */
+}
+
+.dataaicards2maincontainercard{
+    width: 420px;
+    /* margin-bottom: 6vh; */
+    height: 130px;
+    border: 1px solid #d3d3d3;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.dataaicards2maincontainercard img{
+    /* width: 60%; */
+    height: 50%;
+}
+
+.dataaicards2maincontainercard:hover{
+    transform: scale(1.02);
+}

@@ -1,0 +1,42 @@
+.dtsinfolistheader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+    gap: .5vw;
+}
+
+.dtsinfolistheader i {
+    color: #0eaae3;
+}
+
+.dtsinfolistheader p {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.dtsinfolistedescription {
+    color: #595959;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width : 480px) {
+    .dtsinfolist {
+        padding: 0vh 5vw;
+    }
+
+    .dtsinfolistheader {
+        gap: 2vw;
+    }
+
+    .dtsinfolistheader i {
+        font-size: 1rem;
+    }
+
+    .dtsinfolistheader p {
+        font-size: .9rem;
+    }
+
+    .dtsinfolistedescription{
+        font-size: .8rem;
+    }
+}

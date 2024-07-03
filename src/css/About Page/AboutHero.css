@@ -1,0 +1,146 @@
+.aboutheromaincontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.aboutheroheader p {
+    padding-left: 4vw;
+    border-left: 2px solid #0eaae3;
+}
+
+.aboutheroheader {
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #e1f5fe 60%, #ffffff 85%);
+    color: #0eaae3;
+    padding-top: 20vh;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.aboutherosection1 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    /* position: relative;
+    top: -10px; */
+    /* gap: 8vh; */
+    justify-content: space-evenly;
+    padding: 0vh 4vw;
+}
+
+.aboutherosection1infoheader {
+    font-size: 2rem;
+}
+
+.aboutherosection1infoheader p span {
+    color: #0eaae3;
+    font-weight: 600;
+}
+
+.aboutherosection1infodescription {
+    font-size: 1.35rem;
+    color: #595959;
+    text-wrap: wrap;
+    word-spacing: .4cap;
+}
+
+.ahs1info {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.ahs1people {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.ahs1peopleheader {
+    /* display: flex;
+    gap: ; */
+    font-size: 2.5rem;
+    color: #0eaae3;
+}
+
+.ahs1peopledescription {
+    font-size: 1.3rem;
+    color: #595959;
+}
+
+.aboutherosection2 {
+    width: 35vw;
+    padding-bottom: 5vh;
+    height: 65vh;
+    display: flex;
+    -webkit-mask-image: url("../../Resources/blob\ \(1\).svg");;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+}
+
+
+.aboutherosection2 img {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width : 480px) {
+    .aboutheromaincontainer {
+        /* background-image: linear-gradient(180deg, #e1f5fe 14vh, #ffffff 19vh); */
+    }
+
+    .aboutheroheader {
+        padding-left: 0vw;
+        font-size: 1.5rem;
+        padding-top: 13vh;
+    }
+
+    .aboutherosection1 {
+        width: 100vw;
+        gap: 5vh;
+        padding: 3vh 0vw;
+    }
+
+    .ahs1info{
+        padding: 0vh 4vw;
+        gap: 2vh;
+    }
+    
+    .aboutherosection1infoheader{
+        font-size: 1.5rem;
+    }
+    
+    .aboutherosection1infodescription{
+        font-size: .9rem;
+        /* padding: 0vh 4vw; */
+    }
+    
+    .ahs1people{
+        padding: 0vh 4vw;
+        gap: 2vh;
+    }
+
+    .ahs1peopleheader{
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .ahs1peopledescription{
+        font-size: 1rem;
+        
+    }
+
+    .aboutherosection2 {
+        width: 100vw;
+        mask-size: 100% 100%;
+        mask-position: 0vw -3vh;
+        height: 45vh;
+        padding-bottom: 0;
+    }
+
+    .aboutherosection2 img {
+        height: 100%;
+    }
+}
