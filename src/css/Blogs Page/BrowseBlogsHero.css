@@ -1,0 +1,76 @@
+.browseblogsheromaincontainer {
+    width: 100vw;
+    height: 41vh;
+}
+
+.browseblogsheroimgparentcontainer {
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    width: 100%;
+    height: 100%;
+}
+
+.browseblogsemptyspace {
+    width: 100vw;
+    height: 13vh;
+}
+
+.browseblogsheroimgcontainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.browseblogsheroimgcontainer img {
+    width: 100%;
+    height: 100%;
+}
+
+.browseblogsimageoverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    top: 1px;
+    background-color: black;
+}
+
+.browseblogsheroinfo {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left : 19vw;
+    color: white;
+}
+
+.browseblogsheroheader {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.browseblogsherodesc {
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width : 480px) {
+    .browseblogsheroheader{
+        font-size: 1.8rem;
+    }
+
+    .browseblogsherodesc{
+        width: 80vw;
+        font-size: 1rem;
+    }
+
+    .browseblogsheroinfo{
+        width: auto;
+        left: 8vw;
+    }
+
+    
+}

@@ -1,0 +1,143 @@
+.homecardsmaincontainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: #191a1a;
+  /* padding-bottom: 10vh; */
+}
+
+.homecardsheader {
+  font-size: 2rem;
+  padding: 5vh 0vw;
+  color: #0eaae3;
+}
+
+.homecardslist {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 5vh; */
+  justify-content: space-evenly;
+}
+
+.homecard {
+  margin-bottom: 10vh;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(17, 17, 17, 0.2),
+    0 6px 20px 0 rgba(41, 41, 41, 0.19);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 26vw;
+  position: relative;
+  height: 50vh;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.homecard:hover {
+  transform: scale(1.02);
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #000000 10%, #000000 30%);
+}
+
+.homecard:hover .homecardimage img {
+  opacity: .4;
+}
+
+.homecard:hover .homecardlearnmorebtn {
+  display: flex;
+}
+
+.homecard:hover .homecarddescription {
+  display: flex;
+}
+
+.homecardimage img {
+  background-color: black;
+  opacity: 0.7;
+  transition: .3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.homecardinfo {
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: .3s;
+}
+
+.homecardtitle {
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1.5vh 1.5vw;
+}
+
+.homecarddescription {
+  display: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1.5vh 1.5vw;
+}
+
+.homecardlearnmorebtn {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  padding: 1.5vh 1.5vw;
+  font-size: 1.5rem;
+  display: none;
+  bottom: 0;
+}
+
+.homecardlearnmorebtn p {
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width : 480px){
+  .homecardsmaincontainer{
+    /* display: none; */
+  }
+
+  .homecardsheader{
+    font-size: 1.5rem;
+    padding-top: 8vh;   
+  }
+
+  .homecard{
+    width: 40vw;
+    margin-bottom: 3vh;
+    height: 20vh;
+  }
+
+  .homecard:hover .homecardimage img {
+    opacity: .4;
+  }
+  
+  .homecard:hover .homecardlearnmorebtn {
+    display: none;
+  }
+  
+  .homecard:hover .homecarddescription {
+    display: none;
+  }
+
+  .homecardtitle{
+    font-size: 1.2rem;
+  }
+}

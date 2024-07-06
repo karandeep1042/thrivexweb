@@ -1,0 +1,92 @@
+.contactformmaincontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactformheader {
+  font-size: 2.2rem;
+}
+
+.contactforminputs {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  padding: 10vh 0vw;
+}
+
+.contactforminput {
+  display: flex;
+  gap: 1vh;
+  flex-direction: column;
+}
+
+.contactforminput input {
+  padding: 2vh 1vw;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(206, 206, 206);
+}
+
+.contactforminput textarea {
+  padding: 2vh 1vw;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid rgb(206, 206, 206);
+}
+
+.contactformsubmitbtn {
+  background-color: #0e23e3;
+  padding: 2vh;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.contactformsubmitbtn:hover {
+  background-color: #051396;
+}
+
+.contactpagemaincontainer {
+  display: flex;
+  justify-content: center;
+  gap: 5vh;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+  background-color: #191a1a;
+  color: white;
+}
+
+.contactpageheader {
+  font-size: 2rem;
+  color: white;
+}
+
+.contactpageheader span {
+  color: #0eaae3;
+}
+
+.contactpagebutton {
+  border: 1px solid white;
+  padding: 2vh 3vw;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: .3s;
+}
+
+.contactpagebutton:hover {
+  border: 1px solid #0eaae3;
+  background-color: #0eaae3;
+  color: white;
+}
+
+
+@media only screen and (max-width : 480px) {
+  .contactpageheader {
+    font-size: 1.6rem;
+  }
+}

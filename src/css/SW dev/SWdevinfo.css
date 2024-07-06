@@ -1,0 +1,42 @@
+.swdevapproachmaincontainer {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.swdevapproachcard {
+    display: flex;
+    width: 600px;
+    gap: .5vw;
+    padding-left: 2vw;
+    /* margin-bottom: 10vh; */
+}
+
+.swdevcardsec2 label {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.swdevcardsec2 p {
+    color: #595959;
+    font-size: 1rem;
+}
+
+.swdevcardsec1 {
+    /* background-color: #0eaae3; */
+    color: #0eaae3;
+    /* width: 90px;
+    height: 50px; */
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swdevcardsec1 i {
+    font-size: 2rem;
+}

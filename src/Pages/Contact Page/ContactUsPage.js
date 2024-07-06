@@ -1,0 +1,181 @@
+import React, { useState, useRef } from 'react'
+import { Link } from 'react-router-dom'
+import { FileUpload } from 'primereact/fileupload';
+import MuiPhoneNumber from 'material-ui-phone-number';
+import Navbar from '../Home Page/Components/Navbar';
+import Footer from '../Home Page/Components/Footer';
+import emailjs from '@emailjs/browser';
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/bootstrap.css";
+
+
+export default function ContactUsPage() {
+
+    const form = useRef();
+    const [firstName, setFirstName] = useState();
+    const [lastName, setLastName] = useState();
+    const [phoneNumber, setPhoneNumber] = useState();
+    const [position, setPosition] = useState();
+    const [userIndustry, setUserIndustry] = useState();
+    const [emailAddress, setEmailAddress] = useState();
+    const [infoSource, setInfoSource] = useState();
+    const [resumeText, setResumeText] = useState();
+    let emptyCounter;
+
+    let emailMessage = `
+    Full Name : ${firstName} ${lastName}
+    Phone Number : ${phoneNumber}
+    Position : ${position}
+    Your Industry : ${userIndustry}
+    Email Address : ${emailAddress}
+    How did you hear about us ? : ${infoSource}
+    User Message : 
+    ${resumeText}`
+
+    // let emailMessage = `Full name : ${firstName}`
+    // let emailMessage = firstName
+
+    const emailTemplate = {
+        from_name: firstName,
+        from_email: emailAddress,
+        to_name: `Thtivex Team`,
+        message: emailMessage,
+    };
+
+    const sendEmail = (e) => {
+        emailjs
+            .send('service_ihgl8x9', 'template_3hexz7p', emailTemplate, 'MBOoGx2dJN-fehq3E')
+            .then((res) => {
+                console.log('SUCCESS!', res);
+            })
+            .catch((error) => {
+                console.error("Error", error);
+            })
+    }
+
+    const customBase64Uploader = async (event) => {
+        const file = event.files[0];
+        const reader = new FileReader();
+        let blob = await fetch(file.objectURL).then((r) => r.blob()); //blob:url
+
+        reader.readAsDataURL(blob);
+
+        reader.onloadend = function () {
+            const base64data = reader.result;
+        };
+    }
+
+    const checkEveryField = () => {
+        emptyCounter = 0;
+        const elements = document.getElementsByClassName("sapbtpinputtext");
+        console.log(elements[3].children[1].value.length);
+        for (let i = 0; i < elements.length; i++) {
+            const element = elements[i];
+            if (element.value == "" || elements[i].value == "Select..." || elements[3].children[1].value.length < 14) {
+                element.style.border = "1px solid red"
+                emptyCounter++;
+            } else {
+                element.style.border = "none"
+            }
+        }
+        console.log(emptyCounter);
+        if (emptyCounter == 0) {
+            sendEmail();
+        }
+    }
+
+    return (
+        <>
+            <Navbar />
+            <div className='careerappformheadercontainer' style={{ marginTop: '17vh' }}>
+                Let’s start a conversation.
+            </div>
+            <div className='sapbtpappointmentmaincontainer' style={{ marginTop: '4vh' }}>
+                <div className='sapbtpformsection'>
+                    <div className='sapbtpformheader'>
+                        Tell us about your needs
+                    </div>
+                    <div className='sapbtpformbody'>
+                        <div className='sapbtpinputbox sapbtpselect sapbtpselect2'>
+                            <label>First Name<span>*</span></label>
+                            <input type='text' className='sapbtpinputtext' value={firstName} onChange={(e) => { setFirstName(e.target.value) }} />
+                        </div>
+                        <div className='sapbtpinputbox'>
+                            <label>Last Name<span>*</span></label>
+                            <input type='text' className='sapbtpinputtext' value={lastName} onChange={(e) => { setLastName(e.target.value) }} />
+                        </div>
+                        <div className='sapbtpinputbox'>
+                            <label>Email Address<span>*</span></label>
+                            <input type='text' className='sapbtpinputtext' value={emailAddress} onChange={(e) => { setEmailAddress(e.target.value) }} />
+                        </div>
+                        <div className='sapbtpinputbox sapbtpselect sapbtpselect2'>
+                            <label>Phone Number<span>*</span></label>
+                            {/* <MuiPhoneNumber excludeCountries={['us', 'ca']} defaultCountry={'in'} style={{ color: '#f2f2f2', width: '100%', borderBottom: '1px solid transparent' }} /> */}
+                            <PhoneInput
+                                country={"in"}
+                                enableSearch={true}
+                                value={phoneNumber}
+                                onChange={(phone) => setPhoneNumber(phone)}
+                                className='sapbtpinputtext'
+                            />
+                        </div>
+                        <div className='sapbtpinputbox'>
+                            <label>Your Role<span></span></label>
+                            <input type='text' className='sapbtpinputtext' value={position} onChange={(e) => { setPosition(e.target.value) }} />
+                        </div>
+                        <div className='sapbtpinputbox sapbtpselect sapbtpselect2'>
+                            <label>Your Industry<span>*</span></label>
+                            <select className='sapbtpinputtext' value={userIndustry} onChange={(e) => { setUserIndustry(e.target.value) }}>
+                                <option>Select...</option>
+                                <option>Banking & Financial Services</option>
+                                <option>Insurance</option>
+                                <option>Retail & Consumer Packaged Goods</option>
+                                <option>Manufacturing</option>
+                                <option>Energy</option>
+                                <option>Utilities</option>
+                                <option>Hi-Tech</option>
+                                <option>Communications, Media & Entertainment</option>
+                                <option>Travel,Transport & Hospitality</option>
+                                <option>Health</option>
+                                <option>Life Sciences</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+                        <div className='sapbtpinputbox sapbtpselect'>
+                            <label>How did you hear about us<span>*</span></label>
+                            <select className='sapbtpinputtext' value={infoSource} onChange={(e) => { setInfoSource(e.target.value) }}>
+                                <option>Select...</option>
+                                <option>Search Engine</option>
+                                <option>Sales Person</option>
+                                <option>Trade Show / Conferences</option>
+                                <option>Referred by Peer</option>
+                                <option>Referred by Industry Analyst</option>
+                            </select>
+                        </div>
+                        <div className='sapbtpinputbox sapbtptextarea'>
+                            <label>Your Message<span>*</span></label>
+                            <textarea className='sapbtpinputtext' type='text' rows={10} value={resumeText} onChange={(e) => { setResumeText(e.target.value) }} />
+                        </div>
+                        <div className='sapbtpprivacypolicy'>
+                            Your data will be processed by THRIVEX in accordance with our <Link to='/privacypolicy'>privacy policy</Link>
+                        </div>
+                        <div className='sapbtpsendmsgbtn' onClick={sendEmail}>
+                            Send Message <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+                </div>
+                {/* <div className='sapbtpinfosection'>
+                    <div className='sapbtpsocialcontainer'>
+                        <i class="fa-solid fa-envelope"></i>
+                        connect@thethrivex.com
+                    </div>
+                    <div className='sapbtpsocialcontainer'>
+                        <i class="fa-solid fa-phone"></i>
+                        +91-70434 70009
+                    </div>
+                </div> */}
+            </div>
+            <Footer />
+        </>
+    )
+}

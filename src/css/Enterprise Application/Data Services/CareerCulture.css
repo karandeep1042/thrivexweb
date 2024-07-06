@@ -1,0 +1,95 @@
+.careerculturemaincontainer {
+    width: 100vw;
+    background-color: #191A1A;
+    border-bottom: 1px solid #5c5c5c;
+}
+
+.careerculturechildcontainer {
+    width: 95vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh 0vw;
+}
+
+.careercultureheader {
+    color: white;
+    font-size: 2rem;
+    padding: 2vh 0vw;
+    font-weight: 600;
+}
+
+.careercultureheader p {
+    padding-left: 4vw;
+}
+
+.careercultureheader p span {
+    color: #0eaae3;
+}
+
+.careerculturecards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 2vh 0vw;
+    justify-content: space-evenly;
+    /* gap: 7vw; */
+    flex-wrap: wrap;
+}
+
+.careerculturecard {
+    margin: 3vh 5vw;
+    cursor: pointer;
+    width: 330px;
+    /* height: 49vh; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #292828;
+    transition: .3s ease-in-out;
+}
+
+.careerculturecard:hover {
+    transform: scale(1.02);
+}
+
+.careerculturecardimg {
+    width: 100%;
+    height: 20vh;
+}
+
+.careerculturecardimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.careerculturecardinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.careeerculturecardtitle {
+    padding: 1vh .5vw;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.careeerculturecarddescription {
+    /* line-break: anywhere; */
+    padding: 1vh .5vw;
+    color: white;
+    font-size: .7rem;
+}
+
+@media only screen and (max-width : 1451px) {
+    .careerculturecard {
+        width: 235px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .careerculturecard {
+        width: 300px;
+    }
+}
