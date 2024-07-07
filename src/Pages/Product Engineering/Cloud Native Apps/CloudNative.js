@@ -16,7 +16,7 @@ export default function CloudNative() {
       <Navbar/>
       <CloudNativeHero/>
       <CloudNativeInfo2/>
-      <CloudNativeInfo/>
+      {/* <CloudNativeInfo/> */}
       <CloudNativeHero2/>
       <CloudNativeCards/>
       <SWdevhead/>

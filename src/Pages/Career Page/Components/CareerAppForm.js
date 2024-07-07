@@ -14,49 +14,46 @@ export default function CareerAppForm() {
     const [phoneNumber, setPhoneNumber] = useState();
     const [experience, setExperience] = useState();
     const [resumeText, setResumeText] = useState();
-    const [resumeFile, setResumeFile] = useState();
+    const [resumeFile, setResumeFile] = useState(null);
     let emptyCounter;
 
-    let emailMessage = `
-    Full Name : ${name}
-    Phone Number : ${phoneNumber}
-    Position : ${position}
-    Years Of Experience : ${experience}
-    Email Address : ${emailAddress}
+    const sendApplication = async () => {
+        let dataSend = {
+            fullname: name,
+            phonenumber: phoneNumber,
+            position: position,
+            experience: experience,
+            emailaddress: emailAddress,
+            resumetext: resumeText,
+            resumefile: resumeFile
+        }
 
-    Resume : 
-    ${resumeText}
-    `
-
-    const emailTemplate = {
-        from_name: name,
-        from_email: emailAddress,
-        to_name: 'THRIVEX',
-        message: emailMessage,
-        attachment: resumeFile
+        const res = await fetch(`https://thrivexwebbackend.onrender.com/sendapplication`, {
+            method: "POST",
+            body: JSON.stringify(dataSend),
+            headers: {
+                Accept: 'application/json',
+                "Content-Type": "application/json"
+            },
+        })
+            .then((res) => {
+                console.log(res);
+                if (res.status > 199 && res.status < 300) {
+                    alert('Sent Successfully');
+                }
+            });
     };
 
-    const sendEmail = (e) => {
-        // e.preventDefault();
-        emailjs
-            .send('service_ihgl8x9', 'template_3hexz7p', emailTemplate, 'MBOoGx2dJN-fehq3E')
-            .then((res) => {
-                console.log('SUCCESS!', res);
-            })
-            .catch((error) => {
-                console.error("Error", error);
-            })
-    }
-
     const checkEveryField = () => {
-        console.log(document.getElementById("sapbtpfileinput").value);
+        // console.log(document.getElementById("sapbtpfileinput").value);
+        console.log(document.querySelector('resumefile'));
         emptyCounter = 0;
         const elements = document.getElementsByClassName("sapbtpinputtext");
         console.log(elements);
-        
+
         for (let i = 0; i < elements.length; i++) {
             const element = elements[i];
-            if (element.value == "" || elements[i].value == "Select..." ) {
+            if (element.value == "" || elements[i].value == "Select...") {
                 element.style.border = "1px solid red"
                 emptyCounter++;
             } else {
@@ -65,20 +62,20 @@ export default function CareerAppForm() {
         }
         console.log(emptyCounter);
         if (emptyCounter == 0) {
-            sendEmail();
+            sendApplication();
         }
     }
 
 
     const customBase64Uploader = async (event) => {
         // convert file to base64 encoded
-        const file = event.files[0];
-        if (event.files && file) {
+        const file = event.target.files[0];
+        console.log(event.target.value);
+        if (event.target.files && file) {
             const reader = new FileReader();
-            // let blob = await fetch(file.objectURL).then((r) => r.blob()); //blob:url
             reader.onloadend = function () {
                 const base64data = reader.result;
-                // console.log(base64data);
+                setResumeFile(base64data);
             };
             reader.readAsDataURL(file);
         }
@@ -110,11 +107,11 @@ export default function CareerAppForm() {
                             <div className='sapbtpinputbox'>
                                 <label>Upload Resume<span>*</span></label>
                                 {/* <FileUpload style={{ width: '100%', backgroundColor: '#f2f2f2', color: 'Black', display: 'flex', justifyContent: 'center', padding: '1.4vh 0vw', borderRadius: '5px', cursor: 'pointer' }} mode="basic" name="demo[]" url="/api/upload" accept="file/*" customUpload uploadHandler={(e) => { customBase64Uploader(e) }} /> */}
-                                <input type="file" name="" value={resumeFile} id="sapbtpfileinput" className='sapbtpinputtext' />
+                                <input type="file" name="" onChange={(e) => { customBase64Uploader(e) }} id="sapbtpfileinput" className='sapbtpinputtext ' />
                             </div>
                             <div className='sapbtpinputbox'>
                                 <label>Name<span>*</span></label>
-                                <input type='text' className='sapbtpinputtext' value={name} onChange={(e) => { setName(e.target.value) }} />
+                                <input type='text' className='sapbtpinputtext resumefile' value={name} onChange={(e) => { setName(e.target.value) }} />
                             </div>
                             <div className='sapbtpinputbox'>
                                 <label>Email Address<span>*</span></label>

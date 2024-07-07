@@ -32,25 +32,32 @@ export default function ContactUsPage() {
     User Message : 
     ${resumeText}`
 
-    // let emailMessage = `Full name : ${firstName}`
-    // let emailMessage = firstName
+    const sendMessage = async () => {
+        let dataSend = {
+            fullname: `${firstName} ${lastName}`,
+            phonenumber: phoneNumber,
+            position: position,
+            // experience: experience,
+            emailaddress: emailAddress,
+            userindustry: userIndustry,
+            infosource: infoSource,
+            usermessage : resumeText
+        }
 
-    const emailTemplate = {
-        from_name: firstName,
-        from_email: emailAddress,
-        to_name: `Thtivex Team`,
-        message: emailMessage,
-    };
-
-    const sendEmail = (e) => {
-        emailjs
-            .send('service_ihgl8x9', 'template_3hexz7p', emailTemplate, 'MBOoGx2dJN-fehq3E')
+        const res = await fetch(`https://thrivexwebbackend.onrender.com/sendmessage`, {
+            method: "POST",
+            body: JSON.stringify(dataSend),
+            headers: {
+                Accept: 'application/json',
+                "Content-Type": "application/json"
+            },
+        })
             .then((res) => {
-                console.log('SUCCESS!', res);
-            })
-            .catch((error) => {
-                console.error("Error", error);
-            })
+                console.log(res);
+                if (res.status > 199 && res.status < 300) {
+                    alert('Sent Successfully');
+                }
+            });
     }
 
     const customBase64Uploader = async (event) => {
@@ -80,7 +87,7 @@ export default function ContactUsPage() {
         }
         console.log(emptyCounter);
         if (emptyCounter == 0) {
-            sendEmail();
+            sendMessage();
         }
     }
 
@@ -159,7 +166,7 @@ export default function ContactUsPage() {
                         <div className='sapbtpprivacypolicy'>
                             Your data will be processed by THRIVEX in accordance with our <Link to='/privacypolicy'>privacy policy</Link>
                         </div>
-                        <div className='sapbtpsendmsgbtn' onClick={sendEmail}>
+                        <div className='sapbtpsendmsgbtn' onClick={sendMessage}>
                             Send Message <i class="fa-solid fa-paper-plane"></i>
                         </div>
                     </div>
