@@ -5,7 +5,7 @@ export default function IntegrationHero() {
     return (
         <>
             <div className="aboutheroheader" >
-                <p>Enterprise Integration</p>
+                <p>Integration</p>
             </div>
             <div className="dtsheromaincontainer">
                 <div className="aboutherosection1">

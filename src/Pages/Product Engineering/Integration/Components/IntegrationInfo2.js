@@ -7,7 +7,7 @@ export default function IntegrationInfo2() {
             <div className="dtsheromaincontainer">
                 <div className="homeinfosection1">
                     <div className="homeinfoheader" style={{ color: '#0eaae3' }}>
-                        Our Approach to Enterprise Integration Services
+                        Our Approach to Integration
                     </div>
                     <div className="homeinfodescription" style={{ margin: '1vh 0vw' }}>
                         <p>

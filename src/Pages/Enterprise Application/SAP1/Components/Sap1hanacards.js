@@ -39,7 +39,7 @@ export default function Sap1hanacards() {
             <div className="careerculturemaincontainer">
                 <div className="careerculturechildcontainer">
                     <div className="careercultureheader">
-                        <p>S/4 HANA enabled business <span>processes </span></p>
+                        <p>Core Business Processes Optimized with <span>SAP S/4 HANA </span></p>
                     </div>
                     <div className="careerculturecards">
                         {cultureData.map((item, index) => (

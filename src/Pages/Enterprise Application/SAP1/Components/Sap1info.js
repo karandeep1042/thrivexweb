@@ -10,7 +10,7 @@ export default function Sap1info() {
         </div>
         <div className="homeinfosection1">
           <div className="homeinfoheader" style={{ color: '#0eaae3' }}>
-            Why opt for SAP S/4HANA?
+            Unlock Business Agility with SAP S/4 HANA
           </div>
           <div className="homeinfodescription" style={{ margin: '1vh 0vw' }}>
             <p>
@@ -33,7 +33,7 @@ export default function Sap1info() {
                 <p>Simplified Core</p>
               </div>
               <div className="dtsinfolistedescription">
-                This approach allows swift adoption of the latest technological advancements without extensive system overhauls. It utilizes cloud-compatible extensions and minimizes customization.
+                Allows swift adoption of the latest technological advancements without extensive system overhauls. Utilizes cloud-compatible extensions and minimizes customization.
               </div>
             </div>
             <div className="dtsinfolist">

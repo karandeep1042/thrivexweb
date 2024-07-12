@@ -73,8 +73,9 @@
 .footersection2links {
   font-size: 1.1rem;
   display: flex;
-  gap: 3vh;
-  flex-direction: column;
+  /* gap: 5vw; */
+  /* flex-direction: column; */
+  justify-content: space-between;
   flex-wrap: wrap;
   cursor: pointer;
 }
@@ -158,26 +159,6 @@
   transition: .3s;
 }
 
-/* .footersection2accordionheader i{
-  transform: rotate(180deg);
-} */
-
-/* .footersection2accordion input[type="checkbox"] {
-  display: none;
-}
-
-.footersection2accordion .footersection2accordiondesc {
-  padding: 0;
-  line-height: 26px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .5s;
-}
-
-.footersection2accordion input[type="checkbox"]:checked+label+.footersection2accordiondesc {
-  max-height: 200px;
-} */
-
 .footersection2accordion label {
   display: flex;
   align-items: center;
@@ -212,18 +193,31 @@
 
 .footersection2linkschildcontainer {
   /* display: flex; */
+  margin-bottom: 4vh;
+  width: 40%;
+  /* margin-right: 5vw; */
 }
 
 .footersection2linksheader {
-  font-weight: 600;
-  font-size: 1.2rem2
+  /* font-weight: 600; */
+  font-size: 1.2rem;
 }
 
 .footersection2linksinfo {
-  margin-top: 4vh;
+  margin-left: 1vw;
+  margin-top: 2vh;
+  font-size: .9rem;
   display: flex;
   flex-direction: column;
   gap: 2vh;
+}
+
+.footersection2links a{
+  transition: .2s;
+}
+
+.footersection2links a:hover{
+  color: #01c6fd;
 }
 
 @media only screen and (max-width : 480px) {

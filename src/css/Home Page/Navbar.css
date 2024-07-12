@@ -6,14 +6,16 @@
     padding: 1.5vh 0vw;
     position: fixed;
     top: 0;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(206, 206, 206, 0.2), 0 6px 20px 0 rgba(238, 238, 238, 0.19);
+    background-color: transparent;
     transition: .3s ease-in-out;
     z-index: 999;
+    background-color: white;
 }
 
 .navbaractive {
-    height: 7vh;
+    height: 8vh;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(206, 206, 206, 0.2), 0 6px 20px 0 rgba(238, 238, 238, 0.19);
 }
 
 .navbarlogosection {

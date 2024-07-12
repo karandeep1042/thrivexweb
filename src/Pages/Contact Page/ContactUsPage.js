@@ -41,7 +41,7 @@ export default function ContactUsPage() {
             emailaddress: emailAddress,
             userindustry: userIndustry,
             infosource: infoSource,
-            usermessage : resumeText
+            usermessage: resumeText
         }
 
         const res = await fetch(`https://thrivexwebbackend.onrender.com/sendmessage`, {
@@ -95,7 +95,7 @@ export default function ContactUsPage() {
         <>
             <Navbar />
             <div className='careerappformheadercontainer' style={{ marginTop: '17vh' }}>
-                Let’s start a conversation.
+                <p style={{color:'black',padding:'0'}}>Let’s Start a <span style={{color:'#0eaae3'}}> Conversation!</span></p>
             </div>
             <div className='sapbtpappointmentmaincontainer' style={{ marginTop: '4vh' }}>
                 <div className='sapbtpformsection'>
@@ -161,12 +161,12 @@ export default function ContactUsPage() {
                         </div>
                         <div className='sapbtpinputbox sapbtptextarea'>
                             <label>Your Message<span>*</span></label>
-                            <textarea className='sapbtpinputtext' type='text' rows={10} value={resumeText} onChange={(e) => { setResumeText(e.target.value) }} />
+                            <textarea className='sapbtpinputtext' type='text' placeholder='Minimum 100 characters' rows={10} value={resumeText} onChange={(e) => { setResumeText(e.target.value) }} />
                         </div>
                         <div className='sapbtpprivacypolicy'>
                             Your data will be processed by THRIVEX in accordance with our <Link to='/privacypolicy'>privacy policy</Link>
                         </div>
-                        <div className='sapbtpsendmsgbtn' onClick={sendMessage}>
+                        <div className='sapbtpsendmsgbtn' onClick={checkEveryField}>
                             Send Message <i class="fa-solid fa-paper-plane"></i>
                         </div>
                     </div>

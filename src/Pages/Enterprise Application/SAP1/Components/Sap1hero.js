@@ -6,16 +6,17 @@ export default function Sap1hero() {
         <>
             <div className="aboutheroheader" >
                 <p>SAP S/4HANA </p>
+                <p style={{ fontSize: '1.7rem', marginTop: '4vh' }}>The intelligent ERP for real-time business – transact, analyze, predict.</p>
             </div>
             <div className="dtsheromaincontainer">
                 <div className="aboutherosection1">
                     <div className="ahs1info">
                         <div className="aboutherosection1infoheader" style={{ color: '#0eaae3' }}>
-                            <p>Facilitating S/4HANA adoption for intelligent enterprises.</p>
+                            <p>Overview</p>
                         </div>
                         <div className="aboutherosection1infodescription">
-                            At THRIVEX, we're here to help you navigate the transition to S/4HANA adoption, empowering your organization to fully embrace SAP's vision of an intelligent enterprise. This involves integrating solutions with cutting-edge digital technologies and advanced analytics to enhance your business's agility and effectiveness. <br /><br />
-                            SAP S/4HANA, powered by the SAP HANA in-memory database, supports real-time business transactions and data analysis. It plays a key role in SAP's digital transformation strategy, enabling businesses to enhance flexibility and adaptability to changing conditions. This approach defines what SAP calls the intelligent enterprise.
+                            SAP S/4HANA, powered by the SAP HANA in-memory database, supports real-time business transactions and data analysis. This next-generation ERP solution drives SAP's digital transformation strategy, enabling businesses to enhance flexibility and adaptability to changing conditions, embodying SAP's vision of the intelligent enterprise. <br /><br />
+                            At THRIVEX Technologies, we guide you through the transition to S/4HANA, empowering your organization to fully embrace SAP's intelligent enterprise vision. We achieve this by integrating cutting-edge digital technologies and advanced analytics with your SAP S/4HANA solution, maximizing your business's agility and effectiveness.
                         </div>
                     </div>
                 </div>

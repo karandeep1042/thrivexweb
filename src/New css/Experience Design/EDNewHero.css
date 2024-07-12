@@ -1,0 +1,45 @@
+.ednewheromaincontainer {
+    margin-top: 13vh;
+    background-color: #0f0e14;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+}
+
+.ednewherodiv1child {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.ednewherodiv1 {
+    width: 35vw;
+}
+
+.ednewherodiv2 {
+    width: 30vw;
+}
+
+.ednewheroheader {
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    color: #0eaae3;
+}
+
+.ednewheroheader .ednewheroheader2 {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    color: white;
+}
+
+.ednewherodescription {
+    font-size: 1.1rem;
+    color: rgb(150, 150, 150);
+}
+
+.ednewherodiv2 img{
+    width: 100%;
+    height: 100%;
+}

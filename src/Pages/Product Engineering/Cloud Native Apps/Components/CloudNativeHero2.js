@@ -36,8 +36,8 @@ export default function CloudNativeHero2() {
                                         </div>
                                     </li>
                                     <li>
-                                        <label for='second'>Cloud-Native Architecture</label>
                                         <input type='checkbox' name='accordion' id='second' />
+                                        <label for='second'>Cloud-Native Architecture</label>
                                         <div className='content'>
                                             <ul className='insidelist'>
                                                 <li><i class="fa-solid fa-circle"></i>

@@ -15,9 +15,6 @@ export default function Footer() {
 
           </div>
           <div className="footersocialmediaicons">
-            {/* <div className="footersmicon">
-              <i class="fa-brands fa-facebook-f"></i>
-            </div> */}
             <div className="footersmicon">
               <i class="fa-brands fa-x-twitter"></i>
             </div>
@@ -32,7 +29,9 @@ export default function Footer() {
         <div className="footersection2">
           <div className="footersection2header">Useful links</div>
           <div className="footersection2links">
-            {/* <div className="footersection2linkschildcontainer">
+            <Link className="footersection2linkschildcontainer footersection2linksheader" to='/experiencedesign'>Experience Design</Link>
+            <Link className="footersection2linkschildcontainer footersection2linksheader" to='/digitaltalentslutions'>Digital Talent Solutions</Link>
+            <div className="footersection2linkschildcontainer">
               <div className="footersection2linksheader">
                 Data & AI
               </div>
@@ -61,8 +60,16 @@ export default function Footer() {
                 <Link to='/saps4hana'>SAP S/4HANA</Link>
                 <Link to='/sapstechnologyservices'>SAP Technology Services</Link>
               </div>
-            </div> */}
-            <Link to='/experiencedesign' className="footersection2link">Experience Design</Link>
+            </div>
+            <div className="footersection2linkschildcontainer">
+              <Link to='/about' className="footersection2linksheader">
+                About Us
+              </Link>
+              <div className="footersection2linksinfo">
+                <Link to='/career'>Career</Link>
+              </div>
+            </div>
+            {/* <Link to='/experiencedesign' className="footersection2link">Experience Design</Link>
             <div className="footersection2accordion">
               <input type="checkbox" name="" id="first" />
               <label style={{ width: '13vw', position: 'relative' }} for="first"><p>Data & AI</p> <i style={{ position: 'absolute', right: '1px' }} class="fa-solid fa-angle-down"></i></label>
@@ -96,7 +103,7 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <Link to='/digitaltalentsolutions' className="footersection2link">Digital Talent Solutions</Link>
+            <Link to='/digitaltalentsolutions' className="footersection2link">Digital Talent Solutions</Link> */}
           </div>
         </div>
         <div className="footersection3">

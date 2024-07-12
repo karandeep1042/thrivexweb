@@ -17,7 +17,7 @@ export default function AboutPage() {
       {/* <Aboutinfo3 /> */}
       <AboutInfo2 />
       <AboutInfo />
-      <ContactPage desc="Together, let's embark on a journey of digital evolution and turn your vision into reality."/>
+      {/* <ContactPage desc="Together, let's embark on a journey of digital evolution and turn your vision into reality."/> */}
       <Footer />
     </>
   )

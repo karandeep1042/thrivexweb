@@ -1,7 +1,7 @@
 import React from 'react'
-import img1 from '../../../../Resources/dtshero.jpg'
+import img1 from '../../../../Resources/DONE - What We do - Our Services - Experience Design/Image2.png'
 
-export default function IntegrationInfo3() {
+export default function Sap1info2() {
     return (
         <>
             <div className="homeinfomaincontainer">
@@ -10,48 +10,52 @@ export default function IntegrationInfo3() {
                 </div>
                 <div className="homeinfosection1">
                     <div className="homeinfoheader" style={{ color: '#0eaae3' }}>
-                        Business Benefits with Application & System Integration Services
+                        Maximize Business Benefits with SAP S/4HANA
                     </div>
-                    {/* <div className="homeinfodescription" style={{ margin: '1vh 0vw' }}>
-                        <p>
-                            Our fast and efficient service approach recognizes the urgency of seamless team integration. Our digital talent solutions approach ensures you are in safe hands.
-                        </p>
-                    </div> */}
                     <div className="homeinfolists">
                         <div className="dtsinfolist">
                             <div className="dtsinfolistheader">
                                 <i class="fa-solid fa-check"></i>
-                                <p>Adapt to a Changing IT Landscape</p>
+                                <p>Real-time Decision Making</p>
                             </div>
                             <div className="dtsinfolistedescription">
-                                Integrate enterprise apps like CRM, CMS, ERP, and social channels to enable seamless rollouts and rapid implementations, ensuring your business remains agile and responsive.
+                                Gain a single view of your entire business with up-to-the-second data, enabling instant reactions to market changes and data-driven decisions to optimize performance.
                             </div>
                         </div>
                         <div className="dtsinfolist">
                             <div className="dtsinfolistheader">
                                 <i class="fa-solid fa-check"></i>
-                                <p>Get Real-Time Access to Data</p>
+                                <p>Enhanced Customer Experience</p>
                             </div>
                             <div className="dtsinfolistedescription">
-                                Manage critical business data in real-time from diverse systems, enabling more informed decision-making and reducing data discrepancies.
+                                Respond to customer needs in real-time with access to complete customer data, allowing for personalized interactions and improved customer satisfaction.
                             </div>
                         </div>
                         <div className="dtsinfolist">
                             <div className="dtsinfolistheader">
                                 <i class="fa-solid fa-check"></i>
-                                <p>Build an Experience-Rich Culture</p>
+                                <p>Streamlined Operations</p>
                             </div>
                             <div className="dtsinfolistedescription">
-                                Expand your service offerings and channels to reach customers with the right message at the right time, enhancing customer engagement and satisfaction.
+                                Automate workflows and integrate processes across your entire value chain, reducing complexity, eliminating bottlenecks, and boosting overall productivity.
                             </div>
                         </div>
                         <div className="dtsinfolist">
                             <div className="dtsinfolistheader">
                                 <i class="fa-solid fa-check"></i>
-                                <p>Accelerated Time-to-Market</p>
+                                <p>Reduced Costs</p>
                             </div>
                             <div className="dtsinfolistedescription">
-                                Connect applications and automate workflows to swiftly respond to market demands, ensuring competitive agility and faster product launches.
+                                Minimize hardware and software expenses with efficient data management and eliminate the need for complex middleware, reducing IT infrastructure costs.
+                            </div>
+                        </div>
+                        <div className="dtsinfolist">
+                            <div className="dtsinfolistheader">
+                                <i class="fa-solid fa-check"></i>
+                                <p>Future-Proof Innovation</p>
+                            </div>
+                            <div className="dtsinfolistedescription">
+                                Built on the powerful HANA in-memory database, SAP S/4HANA scales and adapts as your business grows, ensuring a platform that supports your evolving needs and future innovations.
                             </div>
                         </div>
                     </div>

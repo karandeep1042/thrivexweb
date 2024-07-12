@@ -9,7 +9,7 @@ export default function Navbar() {
   const navbaroptionsaarr = [
     // { title: "Home", link: '/' },
     // { title: "About Us", link: '/about' },
-    { title: "Insights", link: '/browseblogs' },
+    // { title: "Insights", link: '/browseblogs' },
     // { title: "Career", link: '/career' },
     // { title: "Contact", link: '/contact' },
   ];
@@ -145,7 +145,7 @@ export default function Navbar() {
                   <Link to='/softwaredevelopment' className="navbarserviceddoption">Software Development</Link>
                   <Link to='/modernization' className="navbarserviceddoption">Modernization</Link>
                   <Link to='/cloudnative' className="navbarserviceddoption">Cloud Native</Link>
-                  <Link to='/integration' className="navbarserviceddoption">Enterprise Integration</Link>
+                  <Link to='/integration' className="navbarserviceddoption">Integration</Link>
                 </div>
               </Link>
               <Link className="enterpriseApp" id="enterpriseApp">
@@ -153,7 +153,7 @@ export default function Navbar() {
                 <i className="fa-solid fa-angle-left ealogo"></i>
                 <div className="eamenu">
                   <Link to='/saps4hana' className="navbarserviceddoption">SAP S/4HANA</Link>
-                  <Link to='/sapstechnologyservices' className="navbarserviceddoption">SAP Technology Services</Link>
+                  {/* <Link to='/sapstechnologyservices' className="navbarserviceddoption">SAP Technology Services</Link> */}
                 </div>
               </Link>
               <Link to='/digitaltalentsolutions' className="navbarserviceddoption">Digital Talent Solutions</Link>

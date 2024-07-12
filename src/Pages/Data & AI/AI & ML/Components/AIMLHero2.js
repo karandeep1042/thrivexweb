@@ -39,10 +39,10 @@ export default function AIMLHero2() {
                 </div>
                 <div className="homeinfosection1">
                     <div className="homeinfoheader" style={{ color: '#0eaae3' }}>
-                        Unlocking AI Capabilities: Explore Our Advanced AI & ML Services
+                        Revolutionize with AI: Experience Our Advanced AI & ML Solutions
                     </div>
                     {cardinfo.map((item, index) => (
-                        <div className='swdevapproachcard' style={{paddingLeft:'0vh',margin:'0vh 0vw'}}>
+                        <div className='swdevapproachcard' style={{ paddingLeft: '0vh', margin: '0vh 0vw' }}>
                             <div className='swdevcardsec1'>
                                 <i className={item.logo}></i>
                             </div>

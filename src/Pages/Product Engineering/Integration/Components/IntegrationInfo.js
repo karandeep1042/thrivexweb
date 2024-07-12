@@ -34,10 +34,10 @@ export default function IntegrationInfo() {
                 </div>
                 <div className="homeinfosection1">
                     <div className="homeinfoheader" style={{ color: '#0eaae3' }}>
-                        Unlocking AI Capabilities: Explore Our Advanced AI & ML Services
+                        Unlocking Digital Transformation with our Integration Capabilities
                     </div>
                     {cardinfo.map((item, index) => (
-                        <div className='swdevapproachcard' style={{ paddingLeft: '0vh', margin: '0vh 0vw' , width:'100%' }}>
+                        <div className='swdevapproachcard' style={{ paddingLeft: '0vh', margin: '0vh 0vw', width: '100%' }}>
                             <div className='swdevcardsec1'>
                                 <i className={item.logo}></i>
                             </div>

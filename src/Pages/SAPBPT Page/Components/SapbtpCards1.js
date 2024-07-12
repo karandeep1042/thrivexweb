@@ -5,16 +5,24 @@ export default function SapbtpCards1() {
 
     const cardsinfo = [
         {
-            title: 'Business Environment Challenges',
-            options: ['Globalization and cost pressures', 'Navigating digital transformation', 'Building resilient enterprises']
+            title: 'Database & Data Management',
+            desc1: 'Everything you need to flexibly and efficiently store, access, process, integrate, and interpret all relevant data in your landscape through a singular view and at the speed your business demands.',
+            desc2: "SAP HANA, SAP HANA Cloud, SAP Data Warehouse Cloud"
         },
         {
-            title: 'Key Challenges',
-            options: ['Managing hybrid IT environments', 'Expanding application landscapes', 'Varying cloud adoption speeds', 'Accelerating integration and innovation projects', 'Shortage of IT expertise']
+            title: 'Analytics',
+            desc1: "Plan and forecast, make rapid decisions, and truly become insight driven. Quickly bring data together from internal and external sources to enable identification of anomalies and key performance drivers.",
+            desc2: "SAP Analytics Cloud, SAP Data Warehouse Cloud, SAP BW/4HANA, and others"
         },
         {
-            title: 'Our Goals',
-            options: ['Simplify your ERP System and keep the core clean', 'Optimize processes using best practices', 'Enhance flexibility and agility in process redesign', 'Integrate innovations dynamically', 'Connect solutions and partners in hybrid landscapes', 'Automate business processes for efficiency']
+            title: 'Application Development & Integration',
+            desc1: "Tools for agile business process innovation, extension, and integration in the cloud and across hybrid scenarios. Integrate systems, extend current applications, or create new point solutions.",
+            desc2: "SAP Extension Suite, SAP Integration Suite"
+        },
+        {
+            title: 'Intelligent Technologies',
+            desc1: "AI, machine learning, and IoT are getting embedded into everything, enabling automation of complex business processes and integration of disparate solutions",
+            desc2: "SAP Intelligent Robotic Process Automation (SAP Intelligent RPA), SAP Business AI Services"
         },
     ]
 
@@ -22,14 +30,10 @@ export default function SapbtpCards1() {
         <>
             <div className='sapbtpcards1maincontainer'>
                 <div className='sapbtpcardsheader'>
-                    Digital Differentiation with SAP BTP Factory by THRIVEX
-                </div>
-                <div className='sapbtpcardsdescription'>
-                    Our SAP BTP Factory provides comprehensive consulting services to help you achieve digital differentiation with the SAP Business Technology Platform.
+                More Than a Platform-As-A-Service
                 </div>
                 <div className='sapbtpcards'>
                     {cardsinfo.map((option, index) => (
-
                         <div className='sapbtpcard'>
                             <div className='sapbtpheadersection'>
                                 <div className='sapbtpheadersectionin'>
@@ -37,18 +41,18 @@ export default function SapbtpCards1() {
                                 </div>
                             </div>
                             <div className='sapdescription'>
-                                <ul>
-                                    {option.options.map((item, index) => (
-                                        <li>
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
+                                <div className="sapdescription1">
+                                    {option.desc1}
+                                </div>
+                                <div className="sapdescription2">
+                                    <b>Products include: </b>
+                                    {option.desc2}
+                                </div>
                             </div>
                         </div>
                     ))}
                 </div>
-                <div className='sapbtpcardsheader'>
+                {/* <div className='sapbtpcardsheader'>
                     Business-Centric Focus
                 </div>
                 <div className='sapbtpcardsdescription'>
@@ -60,7 +64,7 @@ export default function SapbtpCards1() {
                 </div>
                 <div className='sapbtpcardsdescription'>
                     The RISE with SAP S/4HANA transformation package includes credits for SAP BTP, enabling a quick start. SAP offers flexible payment models: a monthly subscription for specific services, pre-purchased cloud credits for use through the Cloud Platform Enterprise Agreement (CPEA), or a pay-as-you-go model based on consumption. These models can be combined within a global account to suit your needs.
-                </div>
+                </div> */}
             </div>
         </>
     )

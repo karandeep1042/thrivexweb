@@ -97,12 +97,13 @@ export default function CareerAppForm() {
                         <div className='sapbtpformbody'>
                             <div className='sapbtpinputbox sapbtpselect sapbtpselect2'>
                                 <label>Job Position<span>*</span></label>
-                                <select value={position} onChange={(e) => { setPosition(e.target.value) }} className='sapbtpinputtext'>
+                                {/* <select value={position} onChange={(e) => { setPosition(e.target.value) }} className='sapbtpinputtext'>
                                     <option>Select... </option>
                                     <option>Senior Manager</option>
                                     <option>Project Manager</option>
                                     <option>Developer</option>
-                                </select>
+                                </select> */}
+                                <input type='text' className='sapbtpinputtext' value={position} onChange={(e) => { setEmailAddress(e.target.value) }} />
                             </div>
                             <div className='sapbtpinputbox'>
                                 <label>Upload Resume<span>*</span></label>
@@ -145,7 +146,7 @@ export default function CareerAppForm() {
                             </div>
                             <div className='sapbtpinputbox sapbtptextarea'>
                                 <label>Paste Resume<span>*</span></label>
-                                <textarea type='text' rows={10} value={resumeText} onChange={(e) => { setResumeText(e.target.value) }} className='sapbtpinputtext' />
+                                <textarea type='text' minLength={100} placeholder='Minimum 100 characters'  rows={10} value={resumeText} onChange={(e) => { setResumeText(e.target.value) }} className='sapbtpinputtext' />
                             </div>
                             <div className='sapbtpprivacypolicy'>
                                 Your data will be processed by THRIVEX in accordance with our <Link to='/privacypolicy'>privacy policy</Link>

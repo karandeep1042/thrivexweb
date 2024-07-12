@@ -99,6 +99,11 @@
     width: 100%;
 }
 
+.sapbtptextarea textarea::placeholder {
+    color: grey;
+    font-size: 1rem;
+}
+
 .sapbtpprivacypolicy {
     font-size: .9rem;
     width: 100%;

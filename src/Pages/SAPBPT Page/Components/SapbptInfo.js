@@ -10,11 +10,12 @@ export default function SapbptInfo() {
                 </div>
                 <div className="homeinfosection1">
                     <div className="homeinfoheader" style={{ color: '#0eaae3' }}>
-                        SAP Business Technology Platform
+                        Our Services
+                        <p style={{ fontSize: '1.7rem', marginTop: '4vh' }}>Bring Innovation & Drive Agility with One Unified Platform </p>
                     </div>
                     <div className="homeinfodescription" style={{ margin: '1vh 0vw' }}>
                         <p>
-                            SAP Business Technology Platform (SAP BTP), formerly known as SAP Cloud Platform, is SAP’s Platform-as-a-Service (PaaS). It combines integration, application development, automation, artificial intelligence, data, and analytics into a single, cohesive environment. This unified platform provides companies with the tools and pre-packaged business content necessary for digital transformation, enabling swift implementation of new business scenarios and models. At THRIVEX, our SAP BTP experts offer comprehensive support to help you achieve digital differentiation and gain a competitive edge.
+                            We help businesses achieve digital transformation through SAP BTP, a comprehensive platform combining database management, application development, analytics, and intelligent technologies. Our SAP BTP services offer agile integration, robust solutions, and expert guidance to optimize operations, enhance data management, and accelerate innovation. By leveraging SAP BTP's capabilities, businesses can unlock data insights, streamline processes, and extend SAP applications, driving business value and continuous improvement.
                         </p>
                     </div>
                 </div>

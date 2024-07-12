@@ -7,17 +7,19 @@ import SapbtpHero2 from './Components/SapbtpHero2'
 import SapbtpCards1 from './Components/SapbtpCards1'
 import SapbtpCards2 from './Components/SapbtpCards2'
 import ContactPage from '../Contact Page/ContactPage'
+import SapbtpInfo2 from './Components/SapbtpInfo2'
 
 export default function Sapbpt() {
     return (
         <>
             <Navbar />
-            <SapbptHero/>
-            <SapbptInfo/>
-            <SapbtpHero2/>
-            <SapbtpCards1/>
-            <SapbtpCards2/>
-            <ContactPage desc="Explore how THRIVEX can help you leverage SAP BTP to drive innovation and business growth. Contact our team of experts today to learn more about our services and solutions."/>
+            <SapbptHero />
+            <SapbtpCards1 />
+            <SapbptInfo />
+            <SapbtpHero2 />
+            <SapbtpInfo2 />
+            {/* <SapbtpCards2/> */}
+            <ContactPage head1="Ready to Explore BTP for your " head2="Organization?" desc="Contact us today to start your BTP journey." />
             <Footer />
         </>
     )
