@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../css/Experience Design/EDqanda.css'
+import '../../../New css/Experience Design/EDqanda.css'
 
 export default function EDqanda() {
 
@@ -34,17 +34,34 @@ export default function EDqanda() {
         }
     ]
 
+    const toggleAccordion = (e) => {
+        let panel = e.target.nextElementSibling;
+        if (panel.style.display == "none") {
+            panel.style.display = "block";
+        } else {
+            console.log("ontrol");
+            panel.style.display = "none";
+        }
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+        // console.log(e);
+    }
+
     return (
         <>
             <div className="edqandamaincontainer">
-                <div className="edheroheader">
+                <div className="eqandmainheader">
                     Got questions? We’ve got answers!
                 </div>
                 <div className="edqandachildcontainer">
                     {qandainfo.map((item, index) => (
-                        <div className="edqandacontainer" >
-                            <div className="edqandaquestion">
-                                {item.question}
+                        <div className="edqandacontainer"  >
+                            <div className="edqandaquestion" onClick={(e) => { toggleAccordion(e) }}>
+                                <p>{item.question}</p>
+                                <i className="fa-solid fa-angle-down"></i>
                             </div>
                             <div className="edqandaanswer">
                                 {item.answer}

@@ -1,0 +1,58 @@
+.ednewinfo3maincontainer {
+    /* width: 100vw; */
+    margin-top: 15vh;
+}
+
+.ednewinfo3childcontainer {
+    width: 65vw;
+    margin: auto;
+}
+
+.edinfo3header {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #0eaae3;
+    animation: slideInUp linear;
+    animation-timeline: view(y);
+    animation-range-start: 10px;
+    animation-range-end: 250px;
+    transition: .3s;
+}
+
+.edinfo3lists {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.edinfo3list {
+    animation: slideInUp linear;
+    animation-timeline: view(y);
+    animation-range-start: 10px;
+    animation-range-end: 250px;
+    transition: .3s;
+    margin-top: 3vh;
+    font-size: 1.6rem;
+}
+
+.edinfo3listheader {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.edinfo3listdescription {
+    color: rgb(53, 53, 53);
+}
+
+.edinfo3description {
+    margin-top: 5vh;
+    font-size: 1.6rem;
+    color: #0eaae3;
+    animation: slideInUp linear;
+    animation-timeline: view(y);
+    animation-range-start: 10px;
+    animation-range-end: 250px;
+    transition: .3s;
+}

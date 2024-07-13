@@ -1,0 +1,17 @@
+.edinfo3listtype2{
+    display: flex;
+    flex-direction: row;
+}
+
+.edinfo3listchildcontainer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    gap: 1vh;
+}
+
+.edinfo3listtype2 i{
+    margin-top: 5px;
+    font-size: 1.5rem;
+    color: #0eaae3;
+}

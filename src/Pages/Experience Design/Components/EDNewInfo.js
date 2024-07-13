@@ -43,7 +43,7 @@ export default function EDNewInfo() {
             let element = document.getElementById('ednewinfoimg');
             element.style.transform = "translateY(4vh)"
         }
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
     }
 
     // useEffect(() => {
